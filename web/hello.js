@@ -1,4 +1,5 @@
 'use strict';
+document.getElementById ("helloTitle").addEventListener ('click', cueConfetti);
 
 /************************************************
  * CREDIT FOR THIS FUNCTION:
