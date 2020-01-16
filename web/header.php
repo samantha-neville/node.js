@@ -1,5 +1,6 @@
 <!-- header pulled from https://codepen.io/linux/pen/aEQKWP and then modified -->
 <link href="header.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 <header>
 	<div class="overlay">
 <h1>Welcome</h1>
