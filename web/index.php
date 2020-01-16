@@ -1,4 +1,4 @@
 <?php
-<h1>hi there</h1>
-// phpinfo();
+phpinfo();
+echo 'what is going on';
 ?>
