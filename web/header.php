@@ -3,8 +3,8 @@
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 <header>
 	<div class="overlay">
-<h1>Welcome</h1>
-<h3>Samantha Neville's CS 313 Landing Page</h3>
+<h1>Samantha Neville - CS 313</h1>
+<h3>Welcome to Samantha Neville's CS 313 Landing Page</h3>
 <p>Click the buttons below to see Samantha's projects or learn more about her!</p>
 	<br>
 	<button>PROJECTS</button> 	
