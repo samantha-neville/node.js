@@ -30,7 +30,7 @@
 7. A weird trick I can do is fit my whole fist in my mouth. <br>
 8. Glitter pens are my go to office supply. I use them every. single. day. <br>
 9. My favorite board game is monopoly. No one ever wants to play it though!<br>
-10. I did web dev for my internship, but I still don't really know what I'm doing :) <br>
+10. My mom is an artist so I grew up drawing, paiting, etc. I still do it when I have time. <br>
 </p>
 </div>
 </section>

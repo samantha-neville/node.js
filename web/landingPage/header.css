@@ -3,7 +3,7 @@
 *{padding: 0; margin: 0; box-sizing: border-box;}
 body {
 	height: 900px;
-    background: url(https://protected-refuge-92528.herokuapp.com/landingPage/mountains.jpg);
+    /* background: url(https://protected-refuge-92528.herokuapp.com/landingPage/mountains.jpg); */
 }
 header {
 	text-align: center;
@@ -34,6 +34,7 @@ h1 {
 h3, p {
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 button {
@@ -55,4 +56,7 @@ button:hover{
 }
 #facts {
 	display: inline-block;
+}
+#project-buttons {
+	text-align: center;
 }
