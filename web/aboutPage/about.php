@@ -17,6 +17,7 @@
     <button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/aboutPage/about.php';">ABOUT SAMANTHA</button>
 		</div>
 </header>
+<br>
 <section>
 <h3>10 Fun Facts About Me</h3>
 <div id='wrapper'>

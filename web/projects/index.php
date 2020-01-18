@@ -10,7 +10,7 @@
     <button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/aboutPage/about.php';">ABOUT SAMANTHA</button>
 		</div>
 </header>
-
+<br>
 <section id='project-buttons'>
 <button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/projects/project1.php';">Project 1</button><br>	
 <button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/projects/project2.php';">Project 2</button> <br>
