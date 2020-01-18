@@ -47,36 +47,23 @@
     <img src="wedding.jpg">
     <img src="web team.jpg">
     <img src="siblings.jpg">
-    <img src="babyboy.jpg">
-    <img src="parents.jpg">
-    <!-- <img src="mist.jpg">
-    <img src="paris.jpg"> -->
   </div>
   <div class="column">
     <img src="camp.jpg">
     <img src="hike.jpg">
     <img src="hiking.jpg">
     <img src="jaredhike.jpg">
-    <!-- <img src="rocks.jpg">
-    <img src="underwater.jpg"> -->
-  </div>
-  <!-- <div class="column">
-    <img src="sisters.jpg">
-    <img src="fam.jpg">
-    <img src="falls2.jpg">
-    <img src="paris.jpg">
-    <img src="nature.jpg">
-    <img src="mist.jpg">
-    <img src="paris.jpg">
   </div>
   <div class="column">
-    <img src="underwater.jpg">
-    <img src="ocean.jpg">
-    <img src="wedding.jpg">
-    <img src="mountainskies.jpg">
-    <img src="rocks.jpg">
-    <img src="underwater.jpg">
-  </div> -->
+    <img src="babyboy.jpg">
+    <img src="parents.jpg">
+    <img src="jaredhike.jpg">
+  </div>
+  <div class="column">
+    <img src="chalk.jpg">
+    <img src="baby.jpg">
+    <img src="flexsim.jpg">
+  </div>
 </div>
 </p>
 </div>
