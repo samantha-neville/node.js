@@ -6,7 +6,7 @@
 <h1>Samantha Neville - CS 313</h1>
 	<br>
 	<button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/index.php';">HOME</button> 	
-	<button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/projects/projects.php';">PROJECTS</button> 	
+	<button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/projects/index.php';">PROJECTS</button> 	
     <button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/aboutPage/about.php';">ABOUT SAMANTHA</button>
 
 
