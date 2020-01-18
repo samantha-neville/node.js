@@ -1,10 +1,22 @@
 <?php
 
-include 'https://protected-refuge-92528.herokuapp.com/landingPage/header.php';
-include 'landingPage/header.php';
-include 'header.php';
-?>
+// include 'https://protected-refuge-92528.herokuapp.com/landingPage/header.php';
+// include 'landingPage/header.php';
+// include 'header.php';
 
+?>
+<!-- header pulled from https://codepen.io/linux/pen/aEQKWP and then modified -->
+<link href="https://protected-refuge-92528.herokuapp.com/landingPage/header.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+<header>
+	<div class="overlay">
+<h1>Samantha Neville - CS 313</h1>
+	<br>
+	<button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/index.php';">HOME</button> 	
+	<button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/projects/index.php';">PROJECTS</button> 	
+    <button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/aboutPage/about.php';">ABOUT SAMANTHA</button>
+		</div>
+</header>
 <section>
 <h3>About Me In 10 Fun Facts</h3>
 <p>
