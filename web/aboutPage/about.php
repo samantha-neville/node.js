@@ -44,25 +44,24 @@
 <!-- idea from w3 schools -->
 <div class="row">
   <div class="column">
-    <img src="wedding.jpg">
-    <img src="web team.jpg">
-    <img src="siblings.jpg">
+    <img src="wedding.jpg" alt='Me and Jared at our wedding'>
+    <img src="web team.jpg" alt='Me and my team at work'>
+    <img src="siblings.jpg" alt='My siblings'>
   </div>
   <div class="column">
-    <img src="camp.jpg">
-    <img src="hike.jpg">
-    <img src="hiking.jpg">
-    <img src="jaredhike.jpg">
+    <img src="camp.jpg" alt='Camping'>
+    <img src="hike.jpg" alt='Hiking to Palisades'>
+    <img src="hiking.jpg" alt='Palisades Hike'>
   </div>
   <div class="column">
-    <img src="babyboy.jpg">
-    <img src="parents.jpg">
-    <img src="jaredhike.jpg">
+    <img src="babyboy.jpg" alt='Our Baby Boy'>
+    <img src="parents.jpg" alt='My parents and Jared's parents>
+    <img src="jaredhike.jpg" alt='Jared hiking'>
   </div>
   <div class="column">
-    <img src="chalk.jpg">
-    <img src="baby.jpg">
-    <img src="flexsim.jpg">
+    <img src="chalk.jpg" alt='Me doing chalk art'>
+    <img src="baby.jpg" alt='baby neville'>
+    <img src="flexsim.jpg" alt='Me at work'>
   </div>
 </div>
 </p>
