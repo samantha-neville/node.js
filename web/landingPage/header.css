@@ -53,7 +53,7 @@ button:hover{
 	cursor: pointer;
 }
 
-#wrapper {
+.wrapper {
 	text-align: center;
 }
 #facts {
