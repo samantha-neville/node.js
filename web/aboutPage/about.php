@@ -18,8 +18,9 @@
 		</div>
 </header>
 <section>
-<h3>About Me In 10 Fun Facts</h3>
-<p>
+<h3>10 Fun Facts About Me</h3>
+<div id='wrapper'>
+<p id='facts'>
 1. I'm from Missouri. My parents house is actually 20 minutes from the Far West, Missouri Temple site!<br>
 2. My favorite ice cream is chocolate brownie. I love adding mini marshmellows to it. <br>
 3. I love to accompany on the piano. I played the organ in my home ward. <br>
@@ -30,6 +31,6 @@
 8. Glitter pens are my go to office supply. I use them every. single. day. <br>
 9. My favorite board game is monopoly. No one ever wants to play it though!<br>
 10. I did web dev for my internship, but I still don't really know what I'm doing :) <br>
-
 </p>
+</div>
 </section>

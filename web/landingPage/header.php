@@ -8,8 +8,8 @@
 	<button onclick="window.location.href = 'index.php';">HOME</button> 	
 	<button onclick="window.location.href = 'projects/index.php';">PROJECTS</button> 	
     <button onclick="window.location.href = 'aboutPage/about.php';">ABOUT SAMANTHA</button>
-	<link href='index.php'><br>
+	<!-- <link href='index.php'><br>
 	<link href='projects/index.php'><br>
-	<link href='aboutPage/about.php'><br>
+	<link href='aboutPage/about.php'><br> -->
 		</div>
 </header>

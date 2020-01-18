@@ -1,12 +1,14 @@
 /* header css pulled from https://codepen.io/linux/pen/aEQKWP and then modified */
 
 *{padding: 0; margin: 0; box-sizing: border-box;}
-body{height: 900px;}
-header {
+body {
+	height: 900px;
     background: url(https://protected-refuge-92528.herokuapp.com/landingPage/mountains.jpg);
+}
+header {
 	text-align: center;
 	width: 100%;
-	height: auto;
+	height: 35%;
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
@@ -46,4 +48,11 @@ button {
 }
 button:hover{
 	cursor: pointer;
+}
+
+#wrapper {
+	text-align: center;
+}
+#facts {
+	display: inline-block;
 }
