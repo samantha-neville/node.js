@@ -6,7 +6,7 @@ include '$_SERVER['DOCUMENT_ROOT']'.'landingPage/header.php';
 
 ?>
 <!-- header pulled from https://codepen.io/linux/pen/aEQKWP and then modified -->
-<!-- <header>
+<header>
 	<div class="overlay">
 <h1>Samantha Neville - CS 313</h1>
 	<br>
@@ -14,7 +14,7 @@ include '$_SERVER['DOCUMENT_ROOT']'.'landingPage/header.php';
 	<button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/projects/index.php';">Projects</button> 	
   <button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/aboutPage/about.php';">About Me</button>
 		</div>
-</header> -->
+</header>
 <br>
 <section>
 <h3>10 Fun Facts About Me</h3>
