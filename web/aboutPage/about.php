@@ -1,11 +1,14 @@
 <?php
 
 // include 'https://protected-refuge-92528.herokuapp.com/landingPage/header.php';
-include '$_SERVER['DOCUMENT_ROOT']'.'landingPage/header.php';
+// include 'landingPage/header.php';
 // include 'header.php';
 
 ?>
 <!-- header pulled from https://codepen.io/linux/pen/aEQKWP and then modified -->
+<link href="https://protected-refuge-92528.herokuapp.com/landingPage/header.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="about.css" rel="stylesheet">
 <header>
 	<div class="overlay">
 <h1>Samantha Neville - CS 313</h1>
