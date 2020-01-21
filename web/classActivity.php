@@ -1,6 +1,8 @@
 <?php
+//get post data
 $email = htmlspecialchars($_POST['email']);
-$email = htmlspecialchars($_POST['password']);
+$password = htmlspecialchars($_POST['password']);
 
+//do stuff with the data
 echo "Email: $email<br> Password: $password";
 ?>
