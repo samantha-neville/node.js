@@ -15,8 +15,6 @@
   </head>
   <body>
     <?php
-      // include 'https://protected-refuge-92528.herokuapp.com/landingPage/header.php';
-      // include 'landingPage/header.php';
       include 'landingPage/header.php';
     ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
