@@ -6,10 +6,10 @@
     <title>Landing Page | Samantha Neville</title>
     <link href="index.css" rel="stylesheet">
     <style>
+    /* to override the style in the php header (add the mountain picture) */
     header {
-      height:100%;
+      height:100% !important;
       background: url(https://protected-refuge-92528.herokuapp.com/landingPage/mountains.jpg);
-
     }
     </style>
   </head>

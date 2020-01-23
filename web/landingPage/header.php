@@ -3,8 +3,8 @@
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 <header>
 	<div class="overlay">
-<h1>Samantha Neville - CS 313</h1>
-	<br>
+<h1>Samantha Neville</h1>
+	<br><br>
 	<button onclick="window.location.href = 'index.php';">Home</button> 	
 	<button onclick="window.location.href = 'projects/index.php';">Projects</button> 	
     <button onclick="window.location.href = 'aboutPage/about.php';">About Me</button>
