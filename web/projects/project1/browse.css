@@ -1,4 +1,4 @@
-<!-- credit to https://bootsnipp.com/snippets/j6QAx for the template -->
+/*credit to https://bootsnipp.com/snippets/j6QAx for the template*/
 
 body {
 	font-family: "Open Sans", sans-serif;
@@ -143,4 +143,8 @@ h2::after {
 .star-rating i {
 	font-size: 14px;
 	color: #ffc000;
+}
+
+#view-cart-btn {
+    float:right;
 }
