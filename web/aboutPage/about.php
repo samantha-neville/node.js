@@ -11,11 +11,11 @@
 <link href="about.css" rel="stylesheet">
 <header>
 	<div class="overlay">
-<h1>Samantha Neville - CS 313</h1>
-	<br>
-	<button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/index.php';">Home</button> 	
-	<button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/projects/index.php';">Projects</button> 	
-  <button onclick="window.location.href = 'https://protected-refuge-92528.herokuapp.com/aboutPage/about.php';">About Me</button>
+<h1>Samantha Neville</h1>
+	<br><br>
+	<button onclick="window.location.href = 'index.php';">Home</button> 	
+	<button onclick="window.location.href = 'projects/index.php';">Projects</button> 	
+    <button onclick="window.location.href = 'aboutPage/about.php';">About Me</button>
 		</div>
 </header>
 <br>
