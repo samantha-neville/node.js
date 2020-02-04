@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="" method='POST'>
+  Book:<br>
+  <input type="text" name="book">
+  <br>
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+</body>
+</html>
+
 <?php
     require 'dbConnection.php';
     $db = getDB();
@@ -18,7 +34,9 @@
         echo "<p>$fname $lname is my $relationship ($relationshipID)</p>";
     }
 
-    $scriptures = $db->prepare("SELECT * FROM scriptures");
+
+    $book = $_POST['book'];
+    $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book=$book");
     $scriptures->execute();
 
     echo "<br><br><h1>Scripture Resources</h1>";
