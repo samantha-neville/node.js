@@ -9,7 +9,7 @@
         $lname = $row['last_name'];
         $relationshipID = $row['relationship_id'];
 
-        $relationship = $database->prepare("SELECT description FROM w5_relationships WHERE id= $relationshipID");
+        $relationship = $database->prepare("SELECT description FROM w5_relationships WHERE id=$relationshipID");
         $relationship->execute();
         while($row2 = $familyMembers->fetch(PDO::FETCH_ASSOC)) {
             $relationship = $row2['description'];
