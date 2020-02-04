@@ -18,4 +18,18 @@
         echo "<p>$fname $lname is my $relationship ($relationshipID)</p>";
     }
 
+    $scriptures = $database->prepare("SELECT * FROM scriptures");
+    $scriptures->execute();
+
+    echo "<br><br><h1>Scripture Resources</h1>";
+    while($sRow  = $scriptures->fetch(PDO::FETCH_ASSOC)) {
+        $book    = $row['book'];
+        $chapter = $row['chapter'];
+        $verse   = $row['verse'];
+        $content = $row['content'];
+
+        echo "<p><b>$book $chapter:$verse</b> - \"$content\"</p><br>";
+    }
+
+
 ?>
