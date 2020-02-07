@@ -7,24 +7,29 @@
     // $end_date   = $_POST['end_date'];
     // $num_ppl    = $_POST['choices-single-defaul'];
 
-    isset($_POST['type']) ? $type = $_POST['type'] : $type = 'paint';
+    isset($_POST['type'])       ? $type       = $_POST['type']       : $type       = 'paint';
     isset($_POST['start_date']) ? $start_date = $_POST['start_date'] : $start_date = '2020-02-19'; 
-    isset($_POST['end_date']) ? $end_date = $_POST['end_date'] : $end_date = '2020-02-22';
-    isset($_POST['num_ppl']) ? $num_ppl = $_POST['num_ppl'] : $num_ppl = '1';
+    isset($_POST['end_date'])   ? $end_date   = $_POST['end_date']   : $end_date   = '2020-02-22';
+    isset($_POST['num_ppl'])    ? $num_ppl    = $_POST['num_ppl']    : $num_ppl    = '1';
 
-    echo "type $type <br>start date $start_date <br>end date $end_date <br>ppl $num_ppl" ;
-    // $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book="$book");
-    // $scriptures->execute();
+    $retreats = $db->prepare("SELECT * FROM retreats WHERE type='$type'");
+    $retreats->execute();
 
-    // echo "<br><br><h1>Scripture Resources</h1>";
-    // while($sRow  = $scriptures->fetch(PDO::FETCH_ASSOC)) {
-    //     $book    = $sRow['book'];
-    //     $chapter = $sRow['chapter'];
-    //     $verse   = $sRow['verse'];
-    //     $content = $sRow['content'];
+    while($rRow  = $retreats->fetch(PDO::FETCH_ASSOC)) {
+        $name     = $rRow['name'];
+        $desc     = $rRow['description'];
+        $location = $rRow['location'];
+        $price    = $rRow['price'];
+        $type     = $rRow['type'];
+        $lang     = $rRow['language'];
+        $size     = $rRow['group_size'];
+        $duration = $rRow['duration'];
+        $cancel   = $rRow['cancel_policy'];
+        $sDate    = $rRow['start_date'];
+        $eDate    = $rRow['end_date'];
 
-    //     echo "<p><b>$book $chapter:$verse</b> - \"$content\"</p><br>";
-    // }
+        echo "<p><b>$name</b><br> $desc</p><br>";
+    }
     ?>
     <!DOCTYPE html>
 <html>

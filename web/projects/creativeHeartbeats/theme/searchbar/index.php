@@ -25,7 +25,7 @@
               <option value='furniture'>Furniture</option>
               <option value='floral'>Floral</option>
               <option value='design'>Design</option>
-              <option value='other'>Other</option>
+              <option value='Other'>Other</option>
             </select>
           </div>  
           <div class="input-field second-wrap">
