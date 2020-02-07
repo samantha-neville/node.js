@@ -21,7 +21,7 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: url("../img/rainbowpaint.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -43,7 +43,7 @@ header.masthead h1 {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
+    padding-top: 5rem;
     padding-bottom: 12rem;
   }
   header.masthead h1 {
@@ -104,7 +104,7 @@ header.masthead h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: url("../img/rainbowpaint.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -123,4 +123,12 @@ header.masthead h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+/* start sam */
+#intro {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 20px;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
 }

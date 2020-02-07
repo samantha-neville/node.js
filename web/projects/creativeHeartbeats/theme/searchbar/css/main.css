@@ -1702,7 +1702,7 @@ span.flatpickr-weekday {
 
 .s002 form .inner-form .input-field.fouth-wrap .choices__list--dropdown .choices__item--selectable.is-highlighted {
   background: #fff;
-  color: #b78a62;
+  color: #008080;
 }
 
 .s002 form .inner-form .input-field.fouth-wrap .choices__list--dropdown .choices__item {
@@ -1721,7 +1721,7 @@ span.flatpickr-weekday {
 .s002 form .inner-form .input-field.fifth-wrap .btn-search {
   height: 70px;
   width: 100%;
-  background: #b78a62;
+  background: #008080;
   white-space: nowrap;
   border-radius: .5px;
   font-size: 18px;

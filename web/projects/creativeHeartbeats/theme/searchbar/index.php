@@ -11,7 +11,7 @@
     <div class="s002">
       <form action='search.php' method='post'>
         <fieldset>
-          <p>My life experiences lead me to believe that everyone is born creative in some way, shape of form. Everyone has an inner artist. For example, when people find out I'm an artist, a painter in particular, they continue the conversation with, "You ought to paint..." then they describe an image they have in their mind. It happens All. The. Time. I often wonder why they don't create their image. When I ask them why they don't paint (or draw, sculpt, write, or form) that ideas they are ready with the answer that school/society has brainwashed them with..</p>
+          <p id='intro'>My life experiences lead me to believe that everyone is born creative in some way, shape of form. Everyone has an inner artist. For example, when people find out I'm an artist, a painter in particular, they continue the conversation with, "You ought to paint..." then they describe an image they have in their mind. It happens All. The. Time. I often wonder why they don't create their image. When I ask them why they don't paint (or draw, sculpt, write, or form) that ideas they are ready with the answer that school/society has brainwashed them with..</p>
           <legend>FIND YOUR RETREAT</legend>
         </fieldset>
         <div class="inner-form">
