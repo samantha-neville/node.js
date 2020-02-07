@@ -7,7 +7,7 @@
     $end_date   = $_POST['end_date'];
     $num_ppl    = $_POST['choices-single-default'];
 
-    echo "type $type <br>start date $start_date <br>end date $end_date";
+    echo "type $type <br>start date $start_date <br>end date $end_date ppl $num_ppl" ;
     // $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book="$book");
     // $scriptures->execute();
 
