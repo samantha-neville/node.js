@@ -17,15 +17,15 @@
         <div class="inner-form">
           <div class="input-field first-wrap">
             <select name="type">
-              <option placeholder="Painting" name='type'>Paint & Draw</option>
-              <option>Needle Craft</option>
-              <option>Paper Crafts</option>
-              <option>Food Art</option>
-              <option>Fabric Arts</option>
-              <option>Furniture</option>
-              <option>Floral</option>
-              <option>Design</option>
-              <option>Other</option>
+              <option name='type' value='paint'>Paint & Draw</option>
+              <option value='needle'>Needle Craft</option>
+              <option value='paper'>Paper Crafts</option>
+              <option value='food'>Food Art</option>
+              <option value='fabric'>Fabric Arts</option>
+              <option value='furniture'>Furniture</option>
+              <option value='floral'>Floral</option>
+              <option value='design'>Design</option>
+              <option value='other'>Other</option>
             </select>
           </div>  
           <div class="input-field second-wrap">

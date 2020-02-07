@@ -2,9 +2,10 @@
     <?php
     require 'dbConnection.php';
     $db = getDB();
-    $type = $_POST['type'];
+    $type       = $_POST['type'];
     $start_date = $_POST['start_date'];
     $end_date   = $_POST['end_date'];
+    $num_ppl    = $_POST['choices-single-default'];
 
     echo "type $type <br>start date $start_date <br>end date $end_date";
     // $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book="$book");
