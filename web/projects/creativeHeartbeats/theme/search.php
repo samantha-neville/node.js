@@ -2,7 +2,11 @@
     <?php
     require 'dbConnection.php';
     $db = getDB();
-    // $book = $_POST['book'];
+    $type = $_POST['type'];
+    $start_date = $_POST['start_date'];
+    $end_date   = $_POST['end_date'];
+
+    echo "type $type <br>start date $start_date <br>end date $end_date";
     // $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book="$book");
     // $scriptures->execute();
 

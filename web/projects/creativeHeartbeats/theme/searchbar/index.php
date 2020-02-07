@@ -17,7 +17,7 @@
         <div class="inner-form">
           <div class="input-field first-wrap">
             <select name="type">
-              <option placeholder="Painting">Paint & Draw</option>
+              <option placeholder="Painting" name='type'>Paint & Draw</option>
               <option>Needle Craft</option>
               <option>Paper Crafts</option>
               <option>Food Art</option>
@@ -34,7 +34,7 @@
                 <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
               </svg>
             </div>
-            <input class="datepicker" id="depart" type="text" placeholder="18 May 2020" />
+            <input class="datepicker" id="depart" name='start_date' type="text" placeholder="18 May 2020" />
           </div>
           <div class="input-field third-wrap">
             <div class="icon-wrap">
@@ -42,7 +42,7 @@
                 <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
               </svg>
             </div>
-            <input class="datepicker" id="return" type="text" placeholder="22 May 2020" />
+            <input class="datepicker" id="return" name='end_date' type="text" placeholder="22 May 2020" />
           </div>
           <div class="input-field fouth-wrap">
             <div class="icon-wrap">
