@@ -47,7 +47,7 @@
               <div class="col-lg-12 col-md-9">
                 <!-- <input type="email" class="form-control form-control-lg" placeholder="Enter your email..."> -->
                 <?php
-                include $_SERVER["DOCUMENT_ROOT"].'/projects/creativeHeartbeats/theme/navbar/index.php';
+                require $_SERVER["DOCUMENT_ROOT"].'/projects/creativeHeartbeats/theme/navbar/index.php';
               ?>
               </div>
               <!-- <div class="col-12 col-md-3">
