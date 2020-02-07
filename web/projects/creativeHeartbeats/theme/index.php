@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Landing Page - Start Bootstrap Theme</title>
+  <title>Creative Heartbeats Retreats | Home</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,8 +28,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <a class="btn btn-primary" href="#">Sign In</a>
+      <a class="navbar-brand" href="#">Creative Heartbeats Retreats</a>
+      <!-- <a class="btn btn-primary" href="#">Sign In</a> -->
     </div>
   </nav>
 
@@ -38,27 +38,30 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
+        <!-- <div class="col-xl-12"> -->
+          <!-- <h1 class="mb-5">Find your retreat</h1> -->
+        <!-- </div> -->
+        <div class="col-md-12 col-lg-8 col-xl-7 mx-auto">
+          <!-- <form> -->
             <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              <div class="col-lg-12 col-md-9">
+                <!-- <input type="email" class="form-control form-control-lg" placeholder="Enter your email..."> -->
+                <?php
+                include $_SERVER["DOCUMENT_ROOT"].'/projects/creativeHeartbeats/theme/navbar/index.php';
+              ?>
               </div>
-              <div class="col-12 col-md-3">
+              <!-- <div class="col-12 col-md-3">
                 <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
+              </div> -->
             </div>
-          </form>
+          <!-- </form> -->
         </div>
       </div>
     </div>
   </header>
 
   <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
+  <!-- <section class="features-icons bg-light text-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -90,10 +93,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Image Showcases -->
-  <section class="showcase">
+  <!-- <section class="showcase">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
 
@@ -118,7 +121,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Testimonials -->
   <section class="testimonials text-center bg-light">
@@ -129,21 +132,21 @@
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
             <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+            <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus, dui ac mollis pulvinar, ipsum neque facilisis lacus, eget efficitur purus est sit amet diam. Cras dignissim ligula in enim cursus, vel vestibulum ligula pellentesque. "</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
             <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus, dui ac mollis pulvinar, ipsum neque facilisis lacus, eget efficitur purus est sit amet diam. Cras dignissim ligula in enim cursus, vel vestibulum ligula pellentesque."</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
             <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            <p class="font-weight-light mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus, dui ac mollis pulvinar, ipsum neque facilisis lacus, eget efficitur purus est sit amet diam. Cras dignissim ligula in enim cursus, vel vestibulum ligula pellentesque. "</p>
           </div>
         </div>
       </div>
