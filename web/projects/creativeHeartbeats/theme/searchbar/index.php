@@ -17,7 +17,7 @@
         <div class="inner-form">
           <div class="input-field first-wrap">
             <select name="type">
-              <option name='type' value='paint'>Paint & Draw</option>
+              <option value='paint'>Paint & Draw</option>
               <option value='needle'>Needle Craft</option>
               <option value='paper'>Paper Crafts</option>
               <option value='food'>Food Art</option>
@@ -51,10 +51,11 @@
               </svg>
             </div>
             <select data-trigger="" name="choices-single-defaul">
-              <option placeholder="">2 Adults</option>
-              <option>3 Adults</option>
-              <option>4 Adults</option>
-              <option>5 Adults</option>
+              <option value=1>1 Adults</option>
+              <option value=2>2 Adults</option>
+              <option value=3>3 Adults</option>
+              <option value=4>4 Adults</option>
+              <option value=5>5 Adults</option>
             </select>
           </div>
           <div class="input-field fifth-wrap">
