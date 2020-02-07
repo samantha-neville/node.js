@@ -51,7 +51,7 @@
               </svg>
             </div>
             <select data-trigger="" name="choices-single-defaul">
-              <option value=1>1 Adults</option>
+              <option value=1>1 Adult</option>
               <option value=2>2 Adults</option>
               <option value=3>3 Adults</option>
               <option value=4>4 Adults</option>

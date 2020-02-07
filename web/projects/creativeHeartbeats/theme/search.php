@@ -2,10 +2,15 @@
     <?php
     require 'dbConnection.php';
     $db = getDB();
-    $type       = $_POST['type'];
-    $start_date = $_POST['start_date'];
-    $end_date   = $_POST['end_date'];
-    $num_ppl    = $_POST['choices-single-defaul'];
+    // $type       = $_POST['type'];
+    // $start_date = $_POST['start_date'];
+    // $end_date   = $_POST['end_date'];
+    // $num_ppl    = $_POST['choices-single-defaul'];
+
+    isset($_POST['type']) ? $type = $_POST['type'] : $type = 'paint';
+    isset($_POST['start_date']) ? $start_date = $_POST['start_date'] : $start_date = '2020-02-19'; 
+    isset($_POST['end_date']) ? $end_date = $_POST['end_date'] : $end_date = '2020-02-22';
+    isset($_POST['num_ppl']) ? $num_ppl = $_POST['num_ppl'] : $num_ppl = '1';
 
     echo "type $type <br>start date $start_date <br>end date $end_date <br>ppl $num_ppl" ;
     // $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book="$book");
