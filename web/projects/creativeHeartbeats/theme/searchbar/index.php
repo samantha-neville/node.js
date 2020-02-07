@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet" />
-    <link href="navbar/css/main.css" rel="stylesheet" />
+    <link href="searchbar/css/main.css" rel="stylesheet" />
   </head>
   <body>
     <div class="s002">
@@ -63,8 +63,8 @@
         </div>
       </form>
     </div>
-    <script src="navbar/js/extention/choices.js"></script>
-    <script src="navbar/js/extention/flatpickr.js"></script>
+    <script src="searchbar/js/extention/choices.js"></script>
+    <script src="searchbar/js/extention/flatpickr.js"></script>
     <script>
       flatpickr(".datepicker",
       {});
