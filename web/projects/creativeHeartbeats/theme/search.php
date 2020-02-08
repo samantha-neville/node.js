@@ -35,6 +35,8 @@
     text-align: center;
     text-align: center;
     margin:10px 10% 10px 10%;
+    padding:20px;
+    border-radius:10px;
 }
 
 h1 {
