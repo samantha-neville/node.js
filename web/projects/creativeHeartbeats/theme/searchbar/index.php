@@ -1,3 +1,4 @@
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -81,5 +82,5 @@
       });
 
     </script>
-  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+  </body>
 </html>

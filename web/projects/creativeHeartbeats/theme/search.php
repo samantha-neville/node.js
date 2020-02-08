@@ -22,6 +22,7 @@
 <html>
 <head>
 <style>
+/* flexbox stuff is from w3 schools */
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -32,8 +33,6 @@
     width: 80%;
     margin: 10px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
     text-align: center;
     margin:10px 10% 10px 10%;
 }
