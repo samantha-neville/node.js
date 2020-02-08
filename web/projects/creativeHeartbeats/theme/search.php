@@ -13,7 +13,7 @@
     isset($_POST['num_ppl'])    ? $num_ppl    = $_POST['num_ppl']    : $num_ppl    = '1';
 
     echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
-    $retreats = $db->prepare("SELECT * FROM retreats");
+    $retreats = $db->prepare("SELECT * FROM retreats WHERE type=`$type`");
     $retreats->execute();
 
     while($rRow  = $retreats->fetch(PDO::FETCH_ASSOC)) {
