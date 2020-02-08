@@ -80,7 +80,12 @@ p {
 
     echo "<div>
     <p><b>$name</b><br> $desc</p>
-    <br><b><p class='left-align'>Location: $location</b></p>
+    <br><b><p class='left-align'>Location:</b> $location</p>
+    <br><b><p class='left-align'>Price:</b> $$price</p>
+    <br><b><p class='left-align'>Language:</b> $lang</p>
+    <br><b><p class='left-align'>Group Size:</b> $size</p>
+    <br><b><p class='left-align'>Duration:</b> $duration</p>
+    <br><b><p class='left-align'>Dates:</b> $sDate - $eDate</p>
     </div>";
 }
 ?>
