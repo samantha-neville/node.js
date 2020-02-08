@@ -583,7 +583,7 @@ legend {
   border: 1px solid #DDDDDD;
   border-radius: 2.5px;
   font-size: 14px;
-  min-height: 44px;
+  min-height: 70px;
   overflow: hidden;
 }
 
@@ -1538,6 +1538,7 @@ span.flatpickr-weekday {
   margin-bottom: 60px;
   font-weight: 400;
   text-align: center;
+  text-shadow: 0 0 20px #00847e, 0 0 14px;
 }
 
 .s002 form .inner-form {
@@ -1790,3 +1791,11 @@ span.flatpickr-weekday {
   }
 }
 
+#type {
+  color:#666;
+  font-size:16px;
+  font-family: 'Poppins', sans-serif;
+  height:54px;
+  border:none;
+  background-color: #f9f9f9;
+}

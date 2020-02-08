@@ -16,8 +16,9 @@
         </fieldset>
         <div class="inner-form">
           <div class="input-field first-wrap">
-            <select name="type">
-              <option value='paint'>Paint & Draw</option>
+          <div class='choices__inner'>
+            <select id='type' name="type">
+              <option class='choices__inner' value='paint'>Paint & Draw</option>
               <option value='needle'>Needle Craft</option>
               <option value='paper'>Paper Crafts</option>
               <option value='food'>Food Art</option>
@@ -27,6 +28,7 @@
               <option value='design'>Design</option>
               <option value='Other'>Other</option>
             </select>
+            </div>
           </div>  
           <div class="input-field second-wrap">
             <div class="icon-wrap">
