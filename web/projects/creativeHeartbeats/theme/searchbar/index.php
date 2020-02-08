@@ -19,13 +19,13 @@
           <div class='choices__inner'>
             <select id='type' name="type">
               <option class='choices__inner' value='paint'>Paint & Draw</option>
-              <option value='needle'>Needle Craft</option>
-              <option value='paper'>Paper Crafts</option>
-              <option value='food'>Food Art</option>
+              <!-- <option value='needle'>Needle Craft</option> -->
+              <!-- <option value='paper'>Paper Crafts</option> -->
+              <!-- <option value='food'>Food Art</option> -->
               <option value='fabric'>Fabric Arts</option>
-              <option value='furniture'>Furniture</option>
+              <!-- <option value='furniture'>Furniture</option> -->
               <option value='floral'>Floral</option>
-              <option value='design'>Design</option>
+              <!-- <option value='design'>Design</option> -->
               <option value='Other'>Other</option>
             </select>
             </div>
