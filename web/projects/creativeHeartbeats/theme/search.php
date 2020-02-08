@@ -63,7 +63,7 @@ p {
     isset($_POST['num_ppl'])    ? $num_ppl    = $_POST['num_ppl']    : $num_ppl    = '1';
 
     echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
-    $query = "SELECT * FROM retreats WHERE type=`$type`";
+    $query = "SELECT * FROM retreats WHERE type='$type'";
     echo $query;
     $retreats = $db->prepare($query);
     $retreats->execute();
