@@ -43,6 +43,9 @@ h1 {
 p {
     text-align:center;
 }
+.left-align {
+  text-align:left;
+}
 
 </style>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +78,10 @@ p {
     $sDate    = $rRow['start_date'];
     $eDate    = $rRow['end_date'];
 
-    echo "<div><p><b>$name</b><br> $desc</p></div>";
+    echo "<div>
+    <p><b>$name</b><br> $desc</p>
+    <br><b><p class='left-align'>Location: $location</b></p>
+    </div>";
 }
 ?>
 </div>
