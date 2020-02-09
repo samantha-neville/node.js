@@ -12,9 +12,9 @@
     $_POST['end_date']   != NULL ? $end_date   = $_POST['end_date']   : $end_date   = '2020-12-31';
     $_POST['num_ppl']    != NULL ? $num_ppl    = $_POST['num_ppl']    : $num_ppl    = '1';
 
-    echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
+    // echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
     $query = "SELECT * FROM retreats WHERE type='$type' AND start_date >= '$start_date' AND start_date <= '$end_date' AND end_date >= '$start_date' AND end_date <= '$end_date'";
-    echo $query;
+    // echo $query;
 
 
     $retreats = $db->prepare($query);
@@ -97,22 +97,34 @@ require 'navbar.php';
 
     echo "
     <div>
-      <div class='row'>
       <p><b class='retreat-title>$name</b><br><br> $desc</p><br><br>
-        <div class='column'>
           <br><b><p class='left-align'>Location:</b> $location</p>
           <b><p class='left-align'>Price:</b> $$price</p>
           <b><p class='left-align'>Language:</b> $lang</p>
           <b><p class='left-align'>Group Size:</b> $size people</p>
           <b><p class='left-align'>Duration:</b> $duration days</p>
-          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>
-        </div>
-        <div class='column'>
-          <!--<button>Register</button>-->
-        </div>
-      </div>
+          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>     
     </div>";
 }
+
+//idea: splitting it into columns and having a register button on the right side
+// echo "
+// <div>
+//   <div class='row'>
+//   <p><b class='retreat-title>$name</b><br><br> $desc</p><br><br>
+//     <div class='column'>
+//       <br><b><p class='left-align'>Location:</b> $location</p>
+//       <b><p class='left-align'>Price:</b> $$price</p>
+//       <b><p class='left-align'>Language:</b> $lang</p>
+//       <b><p class='left-align'>Group Size:</b> $size people</p>
+//       <b><p class='left-align'>Duration:</b> $duration days</p>
+//       <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>
+//     </div>
+//     <div class='column'>
+//       <button>Register</button>
+//     </div>
+//   </div>
+// </div>";
 ?>
 </div>
 
