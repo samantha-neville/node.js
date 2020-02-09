@@ -92,8 +92,8 @@ require 'navbar.php';
 
     echo "
     <div>
-      <div class="row">
-        <div class="column">
+      <div class='row'>
+        <div class='column'>
         <p><b>$name</b><br> $desc</p>
           <br><b><p class='left-align'>Location:</b> $location</p>
           <b><p class='left-align'>Price:</b> $$price</p>
@@ -102,7 +102,7 @@ require 'navbar.php';
           <b><p class='left-align'>Duration:</b> $duration days</p>
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>
         </div>
-        <div class="column">
+        <div class='column'>
           <button>Register</button>
         </div>
       </div>
