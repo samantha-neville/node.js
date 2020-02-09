@@ -54,7 +54,9 @@ p {
 .left-align {
   text-align:left;
 }
-
+.column {
+  max-width:50%;
+}
 </style>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -93,8 +95,8 @@ require 'navbar.php';
     echo "
     <div>
       <div class='row'>
+      <p><b>$name</b><br> $desc</p>
         <div class='column'>
-        <p><b>$name</b><br> $desc</p>
           <br><b><p class='left-align'>Location:</b> $location</p>
           <b><p class='left-align'>Price:</b> $$price</p>
           <b><p class='left-align'>Language:</b> $lang</p>
