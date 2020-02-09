@@ -12,7 +12,7 @@
     isset($_POST['num_ppl'])    ? $num_ppl    = $_POST['num_ppl']    : $num_ppl    = '1';
 
     echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
-    $query = "SELECT * FROM retreats WHERE type='$type' AND 'start_date' >= '$start_date' AND 'end_date' >= '$end_date'";
+    $query = "SELECT * FROM retreats WHERE type='$type' AND 'start_date' >= '$start_date' AND 'start_date' <= '$end_date' AND 'end_date' >= '$start_date' AND '$end_date' <= '$end_date'";
     echo $query;
     $retreats = $db->prepare($query);
     $retreats->execute();
@@ -64,6 +64,9 @@ p {
 <link href="css/landing-page.min.css" rel="stylesheet">
 </head>
 <body>
+<?php
+require 'navbar.php';
+?>
 <h1>Retreats for You</h1>
 
 <p>Click on a retreat to learn more!</p>
@@ -88,8 +91,8 @@ p {
     <br><b><p class='left-align'>Location:</b> $location</p>
     <b><p class='left-align'>Price:</b> $$price</p>
     <b><p class='left-align'>Language:</b> $lang</p>
-    <b><p class='left-align'>Group Size:</b> $size</p>
-    <b><p class='left-align'>Duration:</b> $duration</p>
+    <b><p class='left-align'>Group Size:</b> $size people</p>
+    <b><p class='left-align'>Duration:</b> $duration days</p>
     <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>
     </div>";
 }
