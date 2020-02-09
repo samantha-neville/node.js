@@ -70,9 +70,10 @@ p {
 <?php
 require 'navbar.php';
 ?>
+<br><br><br>
 <h1>Retreats for You</h1>
 
-<p>Click on a retreat to learn more!</p>
+<!-- <p>Click on a retreat to learn more!</p> -->
 
 <div class="flex-container">
 <?php
@@ -89,14 +90,22 @@ require 'navbar.php';
     $sDate    = $rRow['start_date'];
     $eDate    = $rRow['end_date'];
 
-    echo "<div>
-    <p><b>$name</b><br> $desc</p>
-    <br><b><p class='left-align'>Location:</b> $location</p>
-    <b><p class='left-align'>Price:</b> $$price</p>
-    <b><p class='left-align'>Language:</b> $lang</p>
-    <b><p class='left-align'>Group Size:</b> $size people</p>
-    <b><p class='left-align'>Duration:</b> $duration days</p>
-    <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>
+    echo "
+    <div>
+      <div class="row">
+        <div class="column">
+        <p><b>$name</b><br> $desc</p>
+          <br><b><p class='left-align'>Location:</b> $location</p>
+          <b><p class='left-align'>Price:</b> $$price</p>
+          <b><p class='left-align'>Language:</b> $lang</p>
+          <b><p class='left-align'>Group Size:</b> $size people</p>
+          <b><p class='left-align'>Duration:</b> $duration days</p>
+          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>
+        </div>
+        <div class="column">
+          <button>Register</button>
+        </div>
+      </div>
     </div>";
 }
 ?>
