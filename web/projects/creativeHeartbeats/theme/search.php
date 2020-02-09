@@ -97,7 +97,7 @@ require 'navbar.php';
 
     echo "
     <div>
-      <p><b class='retreat-title>$name</b><br><br> $desc</p><br><br>
+      <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
           <br><b><p class='left-align'>Location:</b> $location</p>
           <b><p class='left-align'>Price:</b> $$price</p>
           <b><p class='left-align'>Language:</b> $lang</p>
