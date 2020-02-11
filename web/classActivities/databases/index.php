@@ -27,6 +27,8 @@
   <br>
   <select name="topic">
   <?php 
+      require 'dbConnection.php';
+      $db = getDB();
       $statement = $db->prepare("SELECT * FROM topics");
       $statment->execute();
       while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
