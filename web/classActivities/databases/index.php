@@ -1,5 +1,7 @@
 <?php
   require 'dbConnection.php';
+  $db = getDB();
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,18 +30,20 @@
   Content:<br>
   <textarea name="content"></textarea>
   <br>
-  <select name="topic">
-  <?php 
-      $db = getDB();
+  <select id="inputFood" class="form-control" name="food">
+    <?php
       $statement = $db->prepare("SELECT * FROM topics");
-      $statment->execute();
+      $statement->execute();
       while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-        $topicID = $row['id'];
-        $name    = $row['name'];
-        echo "<option value='$topicID'>$name</option>";
+          $id = $row['id'];
+          $name = $row['name'];
+          echo "<option value='$id'>$name</option>";
       }
-  ?>
-  </select>
+      // query db
+      // loop through results
+      // output html option for each row
+    ?>
+</select>
   <h1>we out here</h1>
   <br><br>
   <input type="submit" value="Submit">
