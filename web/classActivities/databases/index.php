@@ -15,6 +15,7 @@
 <form action="bleah.php" method='POST'>
   Book:<br>
   <input type="text" name="book">
+  <br>
   Chapter:<br>
   <input type="text" name="chapter">
   <br>
@@ -24,9 +25,17 @@
   Content:<br>
   <textarea name="content"></textarea>
   <br>
+  <select name="topic">
   <?php 
-      
+      $statement = $db->prepare("SELECT * FROM topics");
+      $statment->execute();
+      while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $topicID = $row['id'];
+        $name    = $row['name'];
+        echo "<option value='$topicID'>$name</option>";
+      }
   ?>
+  </select>
   <br><br>
   <input type="submit" value="Submit">
 </form> 
