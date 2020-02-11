@@ -4,7 +4,9 @@
     $db = getDB();
     
     $book = $_POST['book'];
-    $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book='$book'");
+    $query = "SELECT * FROM scriptures WHERE book='$book'";
+    echo $query;
+    $scriptures = $db->prepare($query);
     $scriptures->execute();
 
     echo "<br><br><h1>Scripture Resources</h1>";
