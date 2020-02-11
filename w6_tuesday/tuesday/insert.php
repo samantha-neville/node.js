@@ -9,7 +9,7 @@ $db = get_db();
 try
 {
 	// insert into database
-	INSERT INTO w6_user (first_name, last_name, food_type) VALUES (:first, :last, :food);
+	$query = 'INSERT INTO w6_user (first_name, last_name, food_type) VALUES (:first, :last, :food)'g;
 	$statement = $db->prepare($query);
 	$statement->bindValue(':first', $first);
 	$statement->bindValue(':last', $last);
