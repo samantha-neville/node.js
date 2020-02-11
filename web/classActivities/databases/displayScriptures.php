@@ -2,7 +2,6 @@
     <?php
     require 'dbConnection.php';
     $db = getDB();
-    
     $book = $_POST['book'];
     $query = "SELECT * FROM scriptures WHERE book='$book'";
     echo $query;

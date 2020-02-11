@@ -11,6 +11,26 @@
   <br><br>
   <input type="submit" value="Submit">
 </form> 
+<!-- form 2 -->
+<form action="bleah.php" method='POST'>
+  Book:<br>
+  <input type="text" name="book">
+  Chapter:<br>
+  <input type="text" name="chapter">
+  <br>
+  Verse:<br>
+  <input type="text" name="verse">
+  <br>
+  Content:<br>
+  <textarea name="content"></textarea>
+  <br>
+  <?php 
+      
+  ?>
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
 </body>
 </html>
 
