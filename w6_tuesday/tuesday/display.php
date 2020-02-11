@@ -15,13 +15,13 @@
             $last    = $row['last_name'];
             $food_id = $row['food_type'];
             $personId - $_GET['personId'];
-            
+
             $statment2 = $db->prepare('SELECT food FROM w6_food WHERE ID = $food_id');
             $statment2->execute();
             while($row2 = $statement2->fetch(PDO::FETCH_ASSOC)) {
                $food = $row2['food'];
+               echo "<h1>$first $last's favorite food is $food</h1>";
             }
-            echo "<h1>$first $last's favorite food is $food</h1>";
          }
             // retrieve url parameter
             // execute query to pull up data from that id
