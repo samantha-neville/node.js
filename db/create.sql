@@ -36,3 +36,10 @@ CREATE TABLE attendees
 , user_id    INT    NOT NULL REFERENCES users(id)
 , retreat_id INT    NOT NULL REFERENCES retreats(id)
 );
+
+
+-- added a column to the retreats database later
+ALTER TABLE retreats ADD name VARCHAR(100) NOT NULL;
+
+-- added a column to the users database later
+ALTER TABLE users ADD last_name VARCHAR(100) NOT NULL;
