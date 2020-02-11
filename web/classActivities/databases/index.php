@@ -9,13 +9,13 @@
 
 <h2>HTML Forms</h2>
 
-<form action="displayScriptures.php" method='POST'>
+<!-- <form action="displayScriptures.php" method='POST'>
   Book:<br>
   <input type="text" name="book">
   <br>
   <br><br>
   <input type="submit" value="Submit">
-</form> 
+</form>  -->
 <!-- form 2 -->
 <form action="saveTopic.php" method='POST'>
   Book:<br>
