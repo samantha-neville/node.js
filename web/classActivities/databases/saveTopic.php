@@ -1,6 +1,9 @@
 <?php
+echo 'we are here';
   require 'dbConnection.php';
+  echo 'we are here2';
   $db = getDB();
+  echo 'we are here3';
  //query1
  try {
   $query  = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ($_POST['book'], $_POST['chapter'], $_POST['verse'], $_POST['content'])";
