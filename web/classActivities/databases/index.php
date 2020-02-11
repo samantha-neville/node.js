@@ -1,3 +1,6 @@
+<?php
+  require 'dbConnection.php';
+?>
 <!DOCTYPE html>
 <html>
 <body>
@@ -27,7 +30,6 @@
   <br>
   <select name="topic">
   <?php 
-      require 'dbConnection.php';
       $db = getDB();
       $statement = $db->prepare("SELECT * FROM topics");
       $statment->execute();
@@ -38,6 +40,7 @@
       }
   ?>
   </select>
+  <h1>we out here</h1>
   <br><br>
   <input type="submit" value="Submit">
 </form> 
