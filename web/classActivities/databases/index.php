@@ -17,7 +17,7 @@
   <input type="submit" value="Submit">
 </form> 
 <!-- form 2 -->
-<form action="bleah.php" method='POST'>
+<form action="saveTopic.php" method='POST'>
   Book:<br>
   <input type="text" name="book">
   <br>
@@ -30,7 +30,7 @@
   Content:<br>
   <textarea name="content"></textarea>
   <br>
-  <select id="inputFood" class="form-control" name="food">
+  <select id="topics" class="form-control" name="topics">
     <?php
       $statement = $db->prepare("SELECT * FROM topics");
       $statement->execute();
@@ -44,7 +44,6 @@
       // output html option for each row
     ?>
 </select>
-  <h1>we out here</h1>
   <br><br>
   <input type="submit" value="Submit">
 </form> 
