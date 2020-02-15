@@ -96,8 +96,9 @@ require 'navbar.php';
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>     
     </div>";
 ?>
-</div>
+<a href='host.php' class='submit'>Go Back</a>
 <a href='insertRetreat.php' class='submit'>Submit</a>
+</div>
 
 </body>
 </html> 
