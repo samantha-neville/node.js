@@ -12,7 +12,7 @@
     $sDate    = $_POST['start_date'];
     $eDate    = $_POST['end_date'];
 
-    $_SESSION['name'] = $name    ;
+    $_SESSION['name'] = $name;
     $_SESSION['description'] = $desc    ;
     $_SESSION['location'] = $location;
     $_SESSION['price'] = $price   ;
@@ -23,6 +23,7 @@
     $_SESSION['cancel_policy'] = $cancel  ;
     $_SESSION['start_date'] = $sDate   ;
     $_SESSION['end_date'] = $eDate;
+    echo $_SESSION['name'];
     ?>
   
 
