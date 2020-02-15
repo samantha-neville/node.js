@@ -74,16 +74,16 @@ require 'navbar.php';
 
 <div class="flex-container">
 <?php
-    // echo "
-    // <div>
-    //   <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
-    //       <br><b><p class='left-align'>Location:</b> $location</p>
-    //       <b><p class='left-align'>Price:</b> $$price</p>
-    //       <b><p class='left-align'>Language:</b> $lang</p>
-    //       <b><p class='left-align'>Group Size:</b> $size people</p>
-    //       <b><p class='left-align'>Duration:</b> $duration days</p>
-    //       <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>     
-    // </div>";
+    echo "
+    <div>
+      <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
+          <br><b><p class='left-align'>Location:</b> $location</p>
+          <b><p class='left-align'>Price:</b> $$price</p>
+          <b><p class='left-align'>Language:</b> $lang</p>
+          <b><p class='left-align'>Group Size:</b> $size people</p>
+          <b><p class='left-align'>Duration:</b> $duration days</p>
+          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>     
+    </div>";
 
 ?>
 </div>
