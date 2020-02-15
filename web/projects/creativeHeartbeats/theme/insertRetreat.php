@@ -1,16 +1,15 @@
 <?php
-    //idea 1 for searching. If they don't have a start date, make the start date today to the end of the year
-    $name     = $_POST['name'];
-    $desc     = $_POST['description'];
-    $location = $_POST['location'];
-    $price    = $_POST['price'];
-    $type     = $_POST['type'];
-    $lang     = $_POST['language'];
-    $size     = $_POST['group_size'];
-    $duration = $_POST['duration'];
-    $cancel   = $_POST['cancel_policy'];
-    $sDate    = $_POST['start_date'];
-    $eDate    = $_POST['end_date'];
+    $name     = $_SESSION['name'];
+    $desc     = $_SESSION['description'];
+    $location = $_SESSION['location'];
+    $price    = $_SESSION['price'];
+    $type     = $_SESSION['type'];
+    $lang     = $_SESSION['language'];
+    $size     = $_SESSION['group_size'];
+    $duration = $_SESSION['duration'];
+    $cancel   = $_SESSION['cancel_policy'];
+    $sDate    = $_SESSION['start_date'];
+    $eDate    = $_SESSION['end_date'];   
     echo $name;
     // echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
     ?>
