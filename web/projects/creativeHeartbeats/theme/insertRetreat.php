@@ -11,17 +11,17 @@
     $cancel   = $_SESSION['cancel_policy'];
     $sDate    = $_SESSION['start_date'];
     $eDate    = $_SESSION['end_date'];   
-    echo  $name
-    $desc
-    $location
-    $price
-    $type
-    $lang
-    $size
-    $duration
-    $cancel
-    $sDate
-    $eDate;
+    echo  $name;
+    echo $desc;
+    echo $location;
+    echo $price;
+    echo $type;
+    echo $lang;
+    echo $size;
+    echo $duration;
+    echo $cancel;
+    echo $sDate;
+    echo $eDate;
 
 
     require 'dbConnection.php';
