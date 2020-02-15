@@ -1,6 +1,6 @@
 <?php
     //idea 1 for searching. If they don't have a start date, make the start date today to the end of the year
-    // $name     = $_POST['name'];
+    $name     = $_POST['name'];
     // $desc     = $_POST['description'];
     // $location = $_POST['location'];
     // $price    = $_POST['price'];
@@ -11,7 +11,7 @@
     // $cancel   = $_POST['cancel_policy'];
     // $sDate    = $_POST['start_date'];
     // $eDate    = $_POST['end_date'];
-
+    echo $name;
     // echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
     ?>
   
@@ -68,7 +68,7 @@ p {
 require 'navbar.php';
 ?>
 <br><br><br>
-<h1>Retreats for You</h1>
+<h1>Review Info</h1>
 
 <!-- <p>Click on a retreat to learn more!</p> -->
 
