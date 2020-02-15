@@ -1,30 +1,29 @@
 <?php
     //idea 1 for searching. If they don't have a start date, make the start date today to the end of the year
-    $name     = $_POST['name'];
-    $desc     = $_POST['description'];
-    $location = $_POST['location'];
-    $price    = $_POST['price'];
-    $type     = $_POST['type'];
-    $lang     = $_POST['language'];
-    $size     = $_POST['group_size'];
-    $duration = $_POST['duration'];
-    $cancel   = $_POST['cancel_policy'];
-    $sDate    = $_POST['start_date'];
-    $eDate    = $_POST['end_date'];
+    $name     = htmlspecialchars($_POST['name']);
+    $desc     = htmlspecialchars($_POST['description']);
+    $location = htmlspecialchars($_POST['location']);
+    $price    = htmlspecialchars($_POST['price']);
+    $type     = htmlspecialchars($_POST['type']);
+    $lang     = htmlspecialchars($_POST['language']);
+    $size     = htmlspecialchars($_POST['group_size']);
+    $duration = htmlspecialchars($_POST['duration']);
+    $cancel   = htmlspecialchars($_POST['cancel_policy']);
+    $sDate    = htmlspecialchars($_POST['start_date']);
+    $eDate    = htmlspecialchars($_POST['end_date']);
 
     session_start();
-    $_SESSION['name'] = $name;
-    $_SESSION['description'] = $desc    ;
-    $_SESSION['location'] = $location;
-    $_SESSION['price'] = $price   ;
-    $_SESSION['type'] = $type    ;
-    $_SESSION['language'] = $lang    ;
-    $_SESSION['group_size'] = $size    ;
-    $_SESSION['duration'] = $duration;
-    $_SESSION['cancel_policy'] = $cancel  ;
-    $_SESSION['start_date'] = $sDate   ;
-    $_SESSION['end_date'] = $eDate;
-    echo $_SESSION['name'];
+    $_SESSION['name']          = $name;
+    $_SESSION['description']   = $desc;
+    $_SESSION['location']      = $location;
+    $_SESSION['price']         = $price;
+    $_SESSION['type']          = $type;
+    $_SESSION['language']      = $lang;
+    $_SESSION['group_size']    = $size;
+    $_SESSION['duration']      = $duration;
+    $_SESSION['cancel_policy'] = $cancel;
+    $_SESSION['start_date']    = $sDate;
+    $_SESSION['end_date']      = $eDate;
     ?>
   
 
