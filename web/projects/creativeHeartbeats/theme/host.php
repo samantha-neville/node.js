@@ -31,8 +31,7 @@
     <h2>Retreat Info</h2><br>
     <!-- Name -->
     <label for="name">Name</label>
-    <input class='stuff' type="text" id="name" name="name" placeholder="Your retreat name... ">
-  
+    <input class='stuff' type="text" id="name" name="name" placeholder="Your retreat name... " required>
     <!-- Type -->
     <label for="type">Type</label>
     <select class='stuff' id="type" name="type">
@@ -43,28 +42,28 @@
     </select>
     <!-- Start Date -->
     <label for="start_date">Start Date</label>
-    <input class='stuff' type="text" id="start_date" name="start_date" placeholder="YYYY-MM-DD">
+    <input class='stuff' type="text" id="start_date" name="start_date" placeholder="YYYY-MM-DD" required>
     <!-- End Date -->
     <label for="end_date">End Date</label>
-    <input class='stuff' type="text" id="end_date" name="end_date" placeholder="YYYY-MM-DD">
+    <input class='stuff' type="text" id="end_date" name="end_date" placeholder="YYYY-MM-DD" required>
     <!-- Duration -->
     <label for="duration">Duration</label>
-    <input class='stuff' type="text" id="duration" name="duration" placeholder="Number of days (ex. 3)">
+    <input class='stuff' type="text" id="duration" name="duration" placeholder="Number of days (ex. 3)" required>
     <!-- Description -->
     <label for="description">Description</label>
     <textarea class='stuff' id="description" name="description" placeholder="Describe your retreat.." style="height:200px"></textarea>
     <!-- Group Size -->
     <label for=" group_size"> Group Size</label>
-    <input class='stuff' id=" group_size" name=" group_size" placeholder="Max number of people (ex. 50)">
+    <input class='stuff' id=" group_size" name=" group_size" placeholder="Max number of people (ex. 50)" required>
      <!-- Language -->
      <label for="language">Language</label>
     <input class='stuff' id="language" name="language" placeholder="English">
      <!-- location -->
      <label for="location">Location</label>
-    <input class='stuff' id="location" name="location" placeholder="California, United States">
+    <input class='stuff' id="location" name="location" placeholder="California, United States" required>
     <!-- Price -->
     <label for="price">Price</label>
-    <input class='stuff' id="price" name="price" placeholder="1000.00">
+    <input class='stuff' id="price" name="price" placeholder="1000.00" required>
      <!-- Cancel Policy -->
      <label for="cancel">Cancel Policy</label>
     <textarea class='stuff' id="cancel" name="cancel_policy" placeholder="Describe your cancellation policy..." style="height:200px"></textarea>
@@ -72,16 +71,16 @@
     <h2>Your Info</h2><br>
     <!--First Name -->
     <label for="fname">First Name</label>
-    <input class='stuff' type="text" id="fname" name="firstName" placeholder="Your first name..">
+    <input class='stuff' type="text" id="fname" name="firstName" placeholder="Your first name.." required>
     <!--Last Name -->
     <label for="fname">Last Name</label>
-    <input class='stuff' type="text" id="lname" name="lastName" placeholder="Your last name..">
+    <input class='stuff' type="text" id="lname" name="lastName" placeholder="Your last name.." required>
     <!--Email -->
-    <label for="email">Email</label>
-    <input class='stuff' type="text" id="email" name="email" placeholder="example@example.com">
+    <label for="email" required>Email</label>
+    <input type='email' class='stuff' type="text" id="email" name="email" placeholder="example@example.com" required>
      <!--Phone -->
      <label for="phone">Phone</label>
-    <input class='stuff' type="text" id="phone" name="phone" placeholder="1-888-888-8888">
+    <input type='tel' class='stuff' type="text" id="phone" name="phone" placeholder="1-888-888-8888" required>
 
 
 
