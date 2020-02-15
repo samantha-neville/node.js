@@ -1,33 +1,18 @@
 <?php
-    require 'dbConnection.php';
-    $db = getDB();
-    // $type       = $_POST['type'];
-    // $start_date = $_POST['start_date'];
-    // $end_date   = $_POST['end_date'];
-    // $num_ppl    = $_POST['choices-single-defaul'];
-
     //idea 1 for searching. If they don't have a start date, make the start date today to the end of the year
-    $name     = $_POST['name'];
-    $desc     = $_POST['description'];
-    $location = $_POST['location'];
-    $price    = $_POST['price'];
-    $type     = $_POST['type'];
-    $lang     = $_POST['language'];
-    $size     = $_POST['group_size'];
-    $duration = $_POST['duration'];
-    $cancel   = $_POST['cancel_policy'];
-    $sDate    = $_POST['start_date'];
-    $eDate    = $_POST['end_date'];
+    // $name     = $_POST['name'];
+    // $desc     = $_POST['description'];
+    // $location = $_POST['location'];
+    // $price    = $_POST['price'];
+    // $type     = $_POST['type'];
+    // $lang     = $_POST['language'];
+    // $size     = $_POST['group_size'];
+    // $duration = $_POST['duration'];
+    // $cancel   = $_POST['cancel_policy'];
+    // $sDate    = $_POST['start_date'];
+    // $eDate    = $_POST['end_date'];
 
-    echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
-    // $query = "SELECT * FROM retreats WHERE type='$type' AND start_date >= '$start_date' AND start_date <= '$end_date' AND end_date >= '$start_date' AND end_date <= '$end_date'";
-    // // echo $query;
-
-
-    // $retreats = $db->prepare($query);
-    // $retreats->execute();
-
-    //     9/10-9/17
+    // echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
     ?>
   
 
@@ -89,16 +74,16 @@ require 'navbar.php';
 
 <div class="flex-container">
 <?php
-    echo "
-    <div>
-      <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
-          <br><b><p class='left-align'>Location:</b> $location</p>
-          <b><p class='left-align'>Price:</b> $$price</p>
-          <b><p class='left-align'>Language:</b> $lang</p>
-          <b><p class='left-align'>Group Size:</b> $size people</p>
-          <b><p class='left-align'>Duration:</b> $duration days</p>
-          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>     
-    </div>";
+    // echo "
+    // <div>
+    //   <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
+    //       <br><b><p class='left-align'>Location:</b> $location</p>
+    //       <b><p class='left-align'>Price:</b> $$price</p>
+    //       <b><p class='left-align'>Language:</b> $lang</p>
+    //       <b><p class='left-align'>Group Size:</b> $size people</p>
+    //       <b><p class='left-align'>Duration:</b> $duration days</p>
+    //       <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>     
+    // </div>";
 }
 
 ?>
