@@ -20,7 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/landing-page.css" rel="stylesheet">
-  <link href="nav.css" rel="stylesheet" type="text/css">
+  <!-- <link href="nav.css" rel="stylesheet" type="text/css"> -->
 </head>
 
 <body>

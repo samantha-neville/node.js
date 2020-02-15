@@ -13,17 +13,78 @@
 
 <!-- Custom styles for this template -->
 <link href="css/landing-page.min.css" rel="stylesheet">
-<link href="nav.css" rel="stylesheet" type="text/css">
+<!-- <link href="nav.css" rel="stylesheet" type="text/css"> -->
 </head>
 <body>
 <?php
     require 'navbar.php';
 ?>
 <br><br><br>
+<h1>Host a Retreat</h1>
 
-<h1>About Creative Heartbeat Retreats</h1>
+<p>Have a creative retreat that you want to post for others to see and sign up for? Enter the retreat information here to add it!</p>
 
-<p>My life experiences lead me to believe that everyone is born creative in some way, shape of form. Everyone has an inner artist. For example, when people find out I'm an artist, a painter in particular, they continue the conversation with, "You ought to paint..." then they describe an image they have in their mind. It happens All. The. Time. I often wonder why they don't create their image. When I ask them why they don't paint (or draw, sculpt, write, or form) that ideas they are ready with the answer that school/society has brainwashed them with..</p>
+<div class="container2">
+  <form action="reviewRetreat.php" method="POST">
+
+    <!-- Retreat Info -->
+    <h2>Retreat Info</h2><br>
+    <!-- Name -->
+    <label for="name">Name</label>
+    <input class='stuff' type="text" id="name" name="name" placeholder="Your retreat name... ">
+  
+    <!-- Type -->
+    <label for="type">Type</label>
+    <select class='stuff' id="type" name="type">
+      <option value="paint">Painting/Drawing</option>
+      <option value="fabric">Fabric Arts</option>
+      <option value="floral">Floral</option>
+      <option value="other">Other</option>
+    </select>
+    <!-- Start Date -->
+    <label for="start_date">Start Date</label>
+    <input class='stuff' type="text" id="start_date" name="start_date" placeholder="YYYY-MM-DD">
+    <!-- End Date -->
+    <label for="end_date">End Date</label>
+    <input class='stuff' type="text" id="end_date" name="end_date" placeholder="YYYY-MM-DD">
+    <!-- Duration -->
+    <label for="duration">Duration</label>
+    <input class='stuff' type="text" id="duration" name="duration" placeholder="Number of days (ex. 3)">
+    <!-- Description -->
+    <label for="description">Description</label>
+    <textarea class='stuff' id="description" name="description" placeholder="Describe your retreat.." style="height:200px"></textarea>
+    <!-- Group Size -->
+    <label for=" num_ppl"> Group Size</label>
+    <input class='stuff' id=" num_ppl" name=" num_ppl" placeholder="Max number of people (ex. 50)">
+     <!-- Language -->
+     <label for="language">Language</label>
+    <input class='stuff' id="language" name="language" placeholder="English">
+     <!-- location -->
+     <label for="location">Location</label>
+    <input class='stuff' id="location" name="location" placeholder="California, United States">
+     <!-- Cancel Policy -->
+     <label for="cancel">Cancel Policy</label>
+    <textarea class='stuff' id="cancel" name="cancel" placeholder="Describe your cancellation policy..." style="height:200px"></textarea>
+    <!-- Your Info -->
+    <h2>Your Info</h2><br>
+    <!--First Name -->
+    <label for="fname">First Name</label>
+    <input class='stuff' type="text" id="fname" name="firstName" placeholder="Your first name..">
+    <!--Last Name -->
+    <label for="fname">Last Name</label>
+    <input class='stuff' type="text" id="lname" name="lastName" placeholder="Your last name..">
+    <!--Email -->
+    <label for="email">Email</label>
+    <input class='stuff' type="text" id="email" name="email" placeholder="example@example.com">
+     <!--Phone -->
+     <label for="phone">Phone</label>
+    <input class='stuff' type="text" id="phone" name="phone" placeholder="1-888-888-8888">
+
+
+
+    <input type="submit" class='submit'  value="Next">
+  </form>
+</div>
 
 </body>
 </html> 

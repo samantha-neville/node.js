@@ -104,4 +104,8 @@ p {
   .container2 {
     background-color: #f2f2f2;
     padding: 20px;
+    margin: 20px;
+    border: #4CAF50;
+    border-width: 1px;
+    border-style: solid;
   }
