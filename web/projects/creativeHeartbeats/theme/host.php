@@ -54,8 +54,8 @@
     <label for="description">Description</label>
     <textarea class='stuff' id="description" name="description" placeholder="Describe your retreat.." style="height:200px"></textarea>
     <!-- Group Size -->
-    <label for=" num_ppl"> Group Size</label>
-    <input class='stuff' id=" num_ppl" name=" num_ppl" placeholder="Max number of people (ex. 50)">
+    <label for=" group_size"> Group Size</label>
+    <input class='stuff' id=" group_size" name=" group_size" placeholder="Max number of people (ex. 50)">
      <!-- Language -->
      <label for="language">Language</label>
     <input class='stuff' id="language" name="language" placeholder="English">
@@ -64,7 +64,7 @@
     <input class='stuff' id="location" name="location" placeholder="California, United States">
      <!-- Cancel Policy -->
      <label for="cancel">Cancel Policy</label>
-    <textarea class='stuff' id="cancel" name="cancel" placeholder="Describe your cancellation policy..." style="height:200px"></textarea>
+    <textarea class='stuff' id="cancel" name="cancel_policy" placeholder="Describe your cancellation policy..." style="height:200px"></textarea>
     <!-- Your Info -->
     <h2>Your Info</h2><br>
     <!--First Name -->
