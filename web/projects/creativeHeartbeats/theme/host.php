@@ -62,6 +62,9 @@
      <!-- location -->
      <label for="location">Location</label>
     <input class='stuff' id="location" name="location" placeholder="California, United States">
+    <!-- Price -->
+    <label for="price">Price</label>
+    <input class='stuff' id="price" name="price" placeholder="1000.00">
      <!-- Cancel Policy -->
      <label for="cancel">Cancel Policy</label>
     <textarea class='stuff' id="cancel" name="cancel_policy" placeholder="Describe your cancellation policy..." style="height:200px"></textarea>

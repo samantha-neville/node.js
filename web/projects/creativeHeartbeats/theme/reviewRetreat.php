@@ -84,6 +84,7 @@ require 'navbar.php';
           <b><p class='left-align'>Duration:</b> $duration days</p>
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>     
     </div>";
+    echo "<a href='insertRetreat' class='submit'  value='Next'>";
 
 ?>
 </div>
