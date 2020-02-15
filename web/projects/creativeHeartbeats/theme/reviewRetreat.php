@@ -12,6 +12,7 @@
     $sDate    = $_POST['start_date'];
     $eDate    = $_POST['end_date'];
 
+    session_start();
     $_SESSION['name'] = $name;
     $_SESSION['description'] = $desc    ;
     $_SESSION['location'] = $location;

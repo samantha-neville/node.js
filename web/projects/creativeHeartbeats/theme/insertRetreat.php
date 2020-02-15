@@ -1,4 +1,5 @@
 <?php
+session_start();
     $name     = $_SESSION['name'];
     $desc     = $_SESSION['description'];
     $location = $_SESSION['location'];
