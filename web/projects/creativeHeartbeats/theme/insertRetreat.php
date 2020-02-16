@@ -27,10 +27,12 @@
             echo 'match<br>';
             //they are already in the database. get their user id, and use it find their current host id
             while($row = $user->fetch(PDO::FETCH_ASSOC)) {
+                echo "in the while loop<br>";
                 $userId = $row['id'];
+                echo "userid $userId<br>";
                 //query 2: use their user id to find their host id
                 $query3 = "SELECT * FROM hosts WHERE user_id=$userId";
-                echo $query3;
+                echo "query3 $query3<br>";
                 $host = $db->prepare($query3);
                 $host->execute();
                 while($row2 = $host->fetch(PDO::FETCH_ASSOC)) {
