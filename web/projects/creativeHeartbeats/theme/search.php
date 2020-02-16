@@ -7,10 +7,13 @@
     // $num_ppl    = $_POST['choices-single-defaul'];
 
     //idea 1 for searching. If they don't have a start date, make the start date today to the end of the year
+     
     $_POST['type']       != NULL ? $type       = $_POST['type']       : $type       = 'paint';
     $_POST['start_date'] != NULL ? $start_date = $_POST['start_date'] : $start_date = '2020-02-19'; 
     $_POST['end_date']   != NULL ? $end_date   = $_POST['end_date']   : $end_date   = '2020-12-31';
     $_POST['num_ppl']    != NULL ? $num_ppl    = $_POST['num_ppl']    : $num_ppl    = '1';
+    if ($_POST['type'] == 'other')
+      $type = 'Other';
 
     // echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
     $query = "SELECT * FROM retreats WHERE type='$type' AND start_date >= '$start_date' AND start_date <= '$end_date' AND end_date >= '$start_date' AND end_date <= '$end_date'";
