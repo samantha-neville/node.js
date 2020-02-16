@@ -38,7 +38,7 @@
         else {
             //they are not in the database. we will have to add them as a user and a host to get their host id
             //query 2: add the person to the database as a user
-            $query2 = "INSERT INTO users (name, email, password, last_name) VALUES ('$first', '$email', 'pass123', $last)";
+            $query2 = "INSERT INTO users (name, email, password, last_name) VALUES ('$first', '$email', 'pass123', '$last')";
             $user = $db->prepare($query2);
             $user->execute();
             $userId = $db->lastInsertId("users_id_seq");
