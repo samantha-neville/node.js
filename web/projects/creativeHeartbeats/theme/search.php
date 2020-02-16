@@ -1,27 +1,16 @@
 <?php
     require 'dbConnection.php';
     $db = getDB();
-    // $type       = $_POST['type'];
-    // $start_date = $_POST['start_date'];
-    // $end_date   = $_POST['end_date'];
-    // $num_ppl    = $_POST['choices-single-defaul'];
-
-    //idea 1 for searching. If they don't have a start date, make the start date today to the end of the year
      
     $_POST['type']       != NULL ? $type       = $_POST['type']       : $type       = 'paint';
     $_POST['start_date'] != NULL ? $start_date = $_POST['start_date'] : $start_date = '2020-02-19'; 
     $_POST['end_date']   != NULL ? $end_date   = $_POST['end_date']   : $end_date   = '2020-12-31';
     $_POST['num_ppl']    != NULL ? $num_ppl    = $_POST['num_ppl']    : $num_ppl    = '1';
  
-    // echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
     $query = "SELECT * FROM retreats WHERE type='$type' AND start_date >= '$start_date' AND start_date <= '$end_date' AND end_date >= '$start_date' AND end_date <= '$end_date'";
-    // echo $query;
-
-
     $retreats = $db->prepare($query);
     $retreats->execute();
 
-    //     9/10-9/17
     ?>
   
 
@@ -95,6 +84,16 @@ require 'navbar.php';
     $cancel   = $rRow['cancel_policy'];
     $sDate    = $rRow['start_date'];
     $eDate    = $rRow['end_date'];
+    $host     = $rRow['host_id'];
+
+
+    $query2 = "SELECT about_host FROM hosts WHERE id=$host";
+    $statement = $db->prepare($query2);
+    $statement->execute();
+    while($hRow  = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $host = $hRow['about_host'];
+    }
+
 
     echo "
     <div>
@@ -104,7 +103,8 @@ require 'navbar.php';
           <b><p class='left-align'>Language:</b> $lang</p>
           <b><p class='left-align'>Group Size:</b> $size people</p>
           <b><p class='left-align'>Duration:</b> $duration days</p>
-          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>     
+          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
+          <b><p class='left-align'>About the host:</b> $host</p>       
     </div>";
 }
 
