@@ -11,6 +11,11 @@
     $cancel   = htmlspecialchars($_POST['cancel_policy']);
     $sDate    = htmlspecialchars($_POST['start_date']);
     $eDate    = htmlspecialchars($_POST['end_date']);
+    $first    = htmlspecialchars($_POST['first']);
+    $last     = htmlspecialchars($_POST['last']);
+    $email    = htmlspecialchars($_POST['email']);
+    $phone    = htmlspecialchars($_POST['phone']);
+
 
     session_start();
     $_SESSION['name']          = $name;
@@ -24,6 +29,10 @@
     $_SESSION['cancel_policy'] = $cancel;
     $_SESSION['start_date']    = $sDate;
     $_SESSION['end_date']      = $eDate;
+    $_SESSION['first']         = $first;
+    $_SESSION['last']          = $last;
+    $_SESSION['email']         = $email;
+    $_SESSION['phone']         = $phone;
     ?>
   
 
@@ -93,12 +102,19 @@ require 'navbar.php';
           <b><p class='left-align'>Language:</b> $lang</p>
           <b><p class='left-align'>Group Size:</b> $size people</p>
           <b><p class='left-align'>Duration:</b> $duration days</p>
-          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>     
+          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
+          <p><b class='retreat-title'>Your Info</b></p><br><br>
+          <b><p class='left-align'>First Name:</b> $first</p>
+          <b><p class='left-align'>Last Name:</b> $last</p>
+          <b><p class='left-align'>Email:</b> $email</p>    
+          <b><p class='left-align'>Phone:</b> $phone</p>    
     </div>";
 ?>
 </div>
+<div class='right-margin'>
 <a href='host.php' class='submit'>Go Back</a>
 <a href='insertRetreat.php' class='submit'>Submit</a>
+</div>
 
 </body>
 </html> 

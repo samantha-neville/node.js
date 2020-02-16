@@ -71,16 +71,16 @@
     <h2>Your Info</h2><br>
     <!--First Name -->
     <label for="fname">First Name</label>
-    <input class='stuff' type="text" id="fname" name="firstName" placeholder="Your first name.." required>
+    <input class='stuff' type="text" id="fname" name="first" placeholder="Your first name.." required>
     <!--Last Name -->
     <label for="fname">Last Name</label>
-    <input class='stuff' type="text" id="lname" name="lastName" placeholder="Your last name.." required>
+    <input class='stuff' type="text" id="lname" name="last" placeholder="Your last name.." required>
     <!--Email -->
     <label for="email" required>Email</label>
     <input type='email' class='stuff' type="text" id="email" name="email" placeholder="example@example.com" required>
      <!--Phone -->
      <label for="phone">Phone</label>
-    <input type='tel' class='stuff' type="text" id="phone" name="phone" placeholder="1-888-888-8888" required>
+    <input type='tel' class='stuff' type="text" id="phone" name="phone" placeholder="1-888-888-8888" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
 
 

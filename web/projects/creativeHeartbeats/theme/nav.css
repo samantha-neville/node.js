@@ -109,3 +109,7 @@ p {
     border-width: 1px;
     border-style: solid;
   }
+
+  .right-margin {
+    margin-right:40%;
+  }
