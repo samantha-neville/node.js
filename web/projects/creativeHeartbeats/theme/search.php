@@ -12,9 +12,11 @@
     $_POST['start_date'] != NULL ? $start_date = $_POST['start_date'] : $start_date = '2020-02-19'; 
     $_POST['end_date']   != NULL ? $end_date   = $_POST['end_date']   : $end_date   = '2020-12-31';
     $_POST['num_ppl']    != NULL ? $num_ppl    = $_POST['num_ppl']    : $num_ppl    = '1';
-    if ($_POST['type'] == 'other')
+    echo "other $other";
+    if ($type == 'other')
       $type = 'Other';
 
+      echo "other $other";
     // echo "type $type<br> dates $start_date $end_date <br>ppl $num_ppl";
     $query = "SELECT * FROM retreats WHERE type='$type' AND start_date >= '$start_date' AND start_date <= '$end_date' AND end_date >= '$start_date' AND end_date <= '$end_date'";
     // echo $query;
