@@ -35,7 +35,7 @@
     $_SESSION['last']          = $last;
     $_SESSION['email']         = $email;
     $_SESSION['phone']         = $phone;
-    $_SESSION['host'];         = $host;
+    $_SESSION['host']          = $host;
 
     ?>
   
