@@ -29,6 +29,7 @@
                 $userId = $row['id'];
                 //query 2: use their user id to find their host id
                 $query3 = "SELECT * FROM hosts WHERE user_id=$userId";
+                echo $query3;
                 $host = $db->prepare($query3);
                 $host->execute();
                 while($row2 = $host->fetch(PDO::FETCH_ASSOC)) {
