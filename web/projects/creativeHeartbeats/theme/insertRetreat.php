@@ -32,7 +32,6 @@
                 $host = $db->prepare($query3);
                 $host->execute();
                 $hostId = $db->lastInsertId("hosts_id_seq");
-
             }
         }
         else {
@@ -58,16 +57,16 @@
     }
 
 
-    $query = "INSERT INTO retreats(price, location, type, description, start_date, end_date, duration, group_size, language, cancel_policy, host_id, name) VALUES ($price, '$location', '$type', '$desc', '$sDate', '$eDate', $duration, $size, '$lang', '$cancel', '$hostId', '$name');";
+    $query = "INSERT INTO retreats(price, location, type, description, start_date, end_date, duration, group_size, language, cancel_policy, host_id, name) VALUES ($price, '$location', '$type', '$desc', '$sDate', '$eDate', $duration, $size, '$lang', '$cancel', $hostId, '$name');";
 
-    // try {
-    //     $retreat = $db->prepare($query);
-    //     $retreat->execute();
-    // }
-    // catch(Exception $e) {
-    //     echo "Database Error. $e";
-    //     die();
-    // }
+    try {
+        $retreat = $db->prepare($query);
+        $retreat->execute();
+    }
+    catch(Exception $e) {
+        echo "Database Error. $e";
+        die();
+    }
     ?>
 
 <!DOCTYPE html>
