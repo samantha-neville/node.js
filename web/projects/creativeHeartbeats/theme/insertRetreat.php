@@ -31,7 +31,10 @@
                 $query3 = "SELECT * FROM hosts WHERE user_id=$userId";
                 $host = $db->prepare($query3);
                 $host->execute();
-                $hostId = $db->lastInsertId("hosts_id_seq");
+                while($row2 = $host->fetch(PDO::FETCH_ASSOC)) {
+                    $hostId = $row2['id'];
+                }
+
             }
         }
         else {
@@ -58,7 +61,6 @@
 
 
     $query = "INSERT INTO retreats(price, location, type, description, start_date, end_date, duration, group_size, language, cancel_policy, host_id, name) VALUES ($price, '$location', '$type', '$desc', '$sDate', '$eDate', $duration, $size, '$lang', '$cancel', $hostId, '$name');";
-
     try {
         $retreat = $db->prepare($query);
         $retreat->execute();
