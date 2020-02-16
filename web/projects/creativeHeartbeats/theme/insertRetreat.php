@@ -24,6 +24,7 @@
         $user = $db->prepare($query1);
         $user->execute();
         if ($row = $user->fetch(PDO::FETCH_ASSOC)) {
+            echo 'match<br>';
             //they are already in the database. get their user id, and use it find their current host id
             while($row = $user->fetch(PDO::FETCH_ASSOC)) {
                 $userId = $row['id'];
@@ -40,18 +41,19 @@
             }
         }
         else {
+            echo"in the else<Br>";
             //they are not in the database. we will have to add them as a user and a host to get their host id
             //query 2: add the person to the database as a user
             $query2 = "INSERT INTO users (name, email, password, last_name) VALUES ('$first', '$email', 'pass123', '$last')";
-            $user = $db->prepare($query2);
-            $user->execute();
-            $userId = $db->lastInsertId("users_id_seq");
+            // $user = $db->prepare($query2);
+            // $user->execute();
+            // $userId = $db->lastInsertId("users_id_seq");
 
             //query 3: now that we have the host as a user, insert them into the hosts table with their new user id and host desc.
             $query3 = "INSERT INTO hosts (user_id, about_host) VALUES ($userId, '$host')";
-            $host = $db->prepare($query3);
-            $host->execute();
-            $hostId = $db->lastInsertId("hosts_id_seq");
+            // $host = $db->prepare($query3);
+            // $host->execute();
+            // $hostId = $db->lastInsertId("hosts_id_seq");
 
         }
 
