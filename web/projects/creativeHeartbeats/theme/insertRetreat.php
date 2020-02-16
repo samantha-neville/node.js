@@ -23,7 +23,7 @@
         $query1 = "SELECT id FROM users WHERE email='$email'";
         $user = $db->prepare($query1);
         $user->execute();
-        if ($row = $user->fetch(PDO::FETCH_ASSOC)) {
+        if ($user->fetch(PDO::FETCH_ASSOC)) {
             echo 'match<br>';
             //they are already in the database. get their user id, and use it find their current host id
             while($row = $user->fetch(PDO::FETCH_ASSOC)) {
