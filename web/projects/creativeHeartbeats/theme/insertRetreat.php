@@ -129,7 +129,7 @@ require 'navbar.php';
 <div class="flex-container">
 <p>Thank you for submitting your retreat! You will be notified when anyone signs up for it.</p>
 </div>
-<div class='right-margin'>
+<div class='right-margin2'>
 <a href='index.php' class='submit'>Home</a>
 </div>
 
