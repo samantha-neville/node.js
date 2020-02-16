@@ -38,7 +38,7 @@
       <option value="paint">Painting/Drawing</option>
       <option value="fabric">Fabric Arts</option>
       <option value="floral">Floral</option>
-      <option value="other">Other</option>
+      <option value="Other">Other</option>
     </select>
     <!-- Start Date -->
     <label for="start_date">Start Date</label>
@@ -81,7 +81,9 @@
      <!--Phone -->
      <label for="phone">Phone</label>
     <input type='tel' class='stuff' type="text" id="phone" name="phone" placeholder="1-888-888-8888" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-
+    <!-- About Host-->
+    <label for="host">About the Host (You!)</label>
+    <textarea class='stuff' id="host" name="host" placeholder="Describe yourself to your attendees..." style="height:200px"></textarea>
 
 
     <input type="submit" class='submit'  value="Next">

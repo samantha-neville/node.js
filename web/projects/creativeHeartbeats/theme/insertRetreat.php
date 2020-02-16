@@ -10,11 +10,55 @@
     $duration = $_SESSION['duration'];
     $cancel   = $_SESSION['cancel_policy'];
     $sDate    = $_SESSION['start_date'];
-    $eDate    = $_SESSION['end_date'];   
+    $eDate    = $_SESSION['end_date']; 
+    $first    = $_SESSION['first']; 
+    $last     = $_SESSION['last']; 
+    $email    = $_SESSION['email']; 
+    $host     = $_SESSION['host'];
 
     require 'dbConnection.php';
     $db = getDB();
-    $query = "INSERT INTO retreats(price, location, type, description, start_date, end_date, duration, group_size, language, cancel_policy, host_id, name) VALUES ($price, '$location', '$type', '$desc', '$sDate', '$eDate', $duration, $size, '$lang', '$cancel', 1, '$name');";
+    try {
+        //query 1: check to see if the user is already in the database. if they are, immediately grab their id
+        $query1 = "SELECT id FROM users WHERE email='$email'";
+        $user = $db->prepare($query1);
+        $user->execute();
+        if ($row = $user->fetch(PDO::FETCH_ASSOC)) {
+            //they are already in the database. get their user id, and use it find their current host id
+            while($row = $user->fetch(PDO::FETCH_ASSOC)) {
+                $userId = $row['id'];
+                //query 2: use their user id to find their host id
+                $query3 = "SELECT * FROM hosts WHERE user_id=$userId";
+                $host = $db->prepare($query3);
+                $host->execute();
+                $hostId = $db->lastInsertId("hosts_id_seq");
+
+            }
+        }
+        else {
+            //they are not in the database. we will have to add them as a user and a host to get their host id
+            //query 2: add the person to the database as a user
+            $query2 = "INSERT INTO users (name, email, password, last_name) VALUES ('$first', '$email', 'pass123', $last)";
+            $user = $db->prepare($query2);
+            $user->execute();
+            $userId = $db->lastInsertId("users_id_seq");
+
+            //query 3: now that we have the host as a user, insert them into the hosts table with their new user id and host desc.
+            $query3 = "INSERT INTO hosts (user_id, about_host) VALUES ($userId, '$host')";
+            $host = $db->prepare($query3);
+            $host->execute();
+            $hostId = $db->lastInsertId("hosts_id_seq");
+
+        }
+
+    }
+    catch(Exception $e) {
+        echo "Database Error. $e";
+        die();
+    }
+
+
+    $query = "INSERT INTO retreats(price, location, type, description, start_date, end_date, duration, group_size, language, cancel_policy, host_id, name) VALUES ($price, '$location', '$type', '$desc', '$sDate', '$eDate', $duration, $size, '$lang', '$cancel', '$hostId', '$name');";
 
     // try {
     //     $retreat = $db->prepare($query);

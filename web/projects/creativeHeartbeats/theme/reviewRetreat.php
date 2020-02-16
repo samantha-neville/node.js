@@ -15,6 +15,8 @@
     $last     = htmlspecialchars($_POST['last']);
     $email    = htmlspecialchars($_POST['email']);
     $phone    = htmlspecialchars($_POST['phone']);
+    $host     = htmlspecialchars($_POST['host']);
+
 
 
     session_start();
@@ -33,6 +35,8 @@
     $_SESSION['last']          = $last;
     $_SESSION['email']         = $email;
     $_SESSION['phone']         = $phone;
+    $_SESSION['host'];         = $host;
+
     ?>
   
 
@@ -108,6 +112,7 @@ require 'navbar.php';
           <b><p class='left-align'>Last Name:</b> $last</p>
           <b><p class='left-align'>Email:</b> $email</p>    
           <b><p class='left-align'>Phone:</b> $phone</p>    
+          <b><p class='left-align'>About You:</b> $host</p>    
     </div>";
 ?>
 </div>
