@@ -29,7 +29,7 @@
 
     <label for="password">Password</label>
     <input class='stuff' type="text" id="password" name="password" placeholder="password">
-    <input type="submit" class='submit'  value="Next">
+    <input type="submit" class='submit'  value="Submit">
   </form>
 </div>
 </body>
