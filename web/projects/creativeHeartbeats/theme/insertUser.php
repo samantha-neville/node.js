@@ -14,7 +14,7 @@
     //if we felt fancy, we could do a lookup before we insert it to make sure there aren't already any users in the database with this email already
     //if there was a match, we would redirect them to the login page.
 
-    $query = "INSERT INTO users (name, email, password, last_name) VALUES ('$name', '$email', $hashed_password, '$last')";
+    $query = "INSERT INTO users (name, email, password, last_name) VALUES ('$name', '$email', '$hashed_password', '$last')";
     echo "query: <br>$query<br>";
     $user = $db->prepare($query);
     $user->execute();
