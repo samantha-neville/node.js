@@ -16,9 +16,10 @@
 
     $query = "INSERT INTO users (name, email, password, last_name) VALUES ('$name', '$email', $hashed_password, '$last')";
     echo "query: <br>$query<br>";
-    // $user = $db->prepare($query);
-    // $user->execute();
-    // $userId = $db->lastInsertId("users_id_seq");
+    $user = $db->prepare($query);
+    $user->execute();
+    $userId = $db->lastInsertId("users_id_seq");
+    echo "userid:<br>$userId<br>";
 
     // session_start();
     // $_SESSION['email'] = $name;
