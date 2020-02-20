@@ -23,13 +23,13 @@
 <div class="container2">
 
 <h1>Sign In</h1>
-<form action="insertUser.php" method="POST">
+<form action="validateSignIn.php" method="POST">
     <!--Email -->
     <label for="email" required>Email</label>
     <input type='email' class='stuff' type="text" id="email" name="email" placeholder="example@example.com" required>
     <!-- Password -->
     <label for="password">Password</label>
-    <input class='stuff' type="text" id="password" name="password" placeholder="password">
+    <input class='stuff' type="password" id="password" name="password" placeholder="password">
     <input type="submit" class='submit'  value="Log In">
   </form>
 </div>

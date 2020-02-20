@@ -21,14 +21,12 @@
         $userId = $db->lastInsertId("users_id_seq");
         echo "userid:<br>$userId<br>";
         header('Location: signIn.php');
+        die();
     }
     catch(Exception $e) {
         echo "Database Error. $e";
         die();
     }
-    // session_start();
-    // $_SESSION['email'] = $name;
-    // $_SESSION['password'] = $desc;
 
     ?>
   

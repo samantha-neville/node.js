@@ -35,7 +35,7 @@
     <input type='email' class='stuff' type="text" id="email" name="email" placeholder="example@example.com" required>
     <!-- Password -->
     <label for="password">Password</label>
-    <input class='stuff' type="text" id="password" name="password" placeholder="password">
+    <input class='stuff' type="password" id="password" name="password" placeholder="password">
     <input type="submit" class='submit'  value="Sign Up">
   </form>
 </div>
