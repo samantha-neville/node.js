@@ -22,21 +22,15 @@
 <br><br><br>
 <div class="container2">
 
-<h1>Sign Up</h1>
+<h1>Sign In</h1>
 <form action="insertUser.php" method="POST">
-    <!--First Name -->
-    <label for="fname">First Name</label>
-    <input class='stuff' type="text" id="fname" name="first" placeholder="Your first name.." required>
-    <!--Last Name -->
-    <label for="fname">Last Name</label>
-    <input class='stuff' type="text" id="lname" name="last" placeholder="Your last name.." required>
     <!--Email -->
     <label for="email" required>Email</label>
     <input type='email' class='stuff' type="text" id="email" name="email" placeholder="example@example.com" required>
     <!-- Password -->
     <label for="password">Password</label>
     <input class='stuff' type="text" id="password" name="password" placeholder="password">
-    <input type="submit" class='submit'  value="Sign Up">
+    <input type="submit" class='submit'  value="Log In">
   </form>
 </div>
 </body>

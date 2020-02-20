@@ -20,6 +20,7 @@
         $user->execute();
         $userId = $db->lastInsertId("users_id_seq");
         echo "userid:<br>$userId<br>";
+        header('Location: signIn.php');
     }
     catch(Exception $e) {
         echo "Database Error. $e";
