@@ -1,12 +1,27 @@
 <?php
     //idea 1 for searching. If they don't have a start date, make the start date today to the end of the year
-    $username = htmlspecialchars($_POST['username']);
+    $name     = htmlspecialchars($_SESSION['first']); 
+    $last     = htmlspecialchars($_SESSION['last']); 
+    $email    = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
+    
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    
+    
+    require 'dbConnection.php';
+    $db = getDB();
 
-    session_start();
-    $_SESSION['username'] = $name;
-    $_SESSION['password'] = $desc;
-   
+    //if we felt fancy, we could do a lookup before we insert it to make sure there aren't already any users in the database with this email already
+    //if there was a match, we would redirect them to the login page.
+
+    // $query = "INSERT INTO users (name, email, password, last_name) VALUES ('$first', '$email', $hashed_password, '$last')";
+    // $user = $db->prepare($query);
+    // $user->execute();
+    // $userId = $db->lastInsertId("users_id_seq");
+
+    // session_start();
+    // $_SESSION['email'] = $name;
+    // $_SESSION['password'] = $desc;
 
     ?>
   
@@ -71,9 +86,11 @@ require 'navbar.php';
 <?php
     echo "
     <div>
-      <p><b class='retreat-title'>Your Info</b><br><br>the username and password you entered</p><br><br>
-          <br><b><p class='left-align'>Username:</b> $username</p>
-          <br><b><p class='left-align'>Username:</b> $password</p>
+      <p><b class='retreat-title'>Your Info</b><br><br>the email and password you entered</p><br><br>
+          <br><b><p class='left-align'>Name:</b> $name</p>
+          <br><b><p class='left-align'>Last:</b> $last</p>
+          <br><b><p class='left-align'>Email:</b> $email</p>
+          <br><b><p class='left-align'>Password:</b> $password</p>
     </div>";
 ?>
 

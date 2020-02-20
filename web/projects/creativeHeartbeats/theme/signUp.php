@@ -24,9 +24,16 @@
 
 <h1>Sign Up</h1>
 <form action="insertUser.php" method="POST">
-    <label for="username">User Name</label>
-    <input class='stuff' type="text" id="username" name="username" placeholder="username">
-
+    <!--First Name -->
+    <label for="fname">First Name</label>
+    <input class='stuff' type="text" id="fname" name="first" placeholder="Your first name.." required>
+    <!--Last Name -->
+    <label for="fname">Last Name</label>
+    <input class='stuff' type="text" id="lname" name="last" placeholder="Your last name.." required>
+    <!--Email -->
+    <label for="email" required>Email</label>
+    <input type='email' class='stuff' type="text" id="email" name="email" placeholder="example@example.com" required>
+    <!-- Password -->
     <label for="password">Password</label>
     <input class='stuff' type="text" id="password" name="password" placeholder="password">
     <input type="submit" class='submit'  value="Submit">
