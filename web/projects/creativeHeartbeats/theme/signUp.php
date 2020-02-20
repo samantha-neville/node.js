@@ -20,10 +20,6 @@
     require 'navbar.php';
 ?>
 <br><br><br>
-<h1>Contact Us</h1>
-
-<p>Questions, thoughts or comments? Contact us!</p>
-
 <div class="container2">
 
 <h1>Sign Up</h1>
