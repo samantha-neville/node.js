@@ -1,7 +1,7 @@
 <?php
     //idea 1 for searching. If they don't have a start date, make the start date today to the end of the year
-    $name     = htmlspecialchars($_SESSION['first']); 
-    $last     = htmlspecialchars($_SESSION['last']); 
+    $name     = htmlspecialchars($_POST['first']); 
+    $last     = htmlspecialchars($_POST['last']); 
     $email    = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
     
@@ -14,7 +14,8 @@
     //if we felt fancy, we could do a lookup before we insert it to make sure there aren't already any users in the database with this email already
     //if there was a match, we would redirect them to the login page.
 
-    // $query = "INSERT INTO users (name, email, password, last_name) VALUES ('$first', '$email', $hashed_password, '$last')";
+    $query = "INSERT INTO users (name, email, password, last_name) VALUES ('$name', '$email', $hashed_password, '$last')";
+    echo "query: <br>$query<br>";
     // $user = $db->prepare($query);
     // $user->execute();
     // $userId = $db->lastInsertId("users_id_seq");
