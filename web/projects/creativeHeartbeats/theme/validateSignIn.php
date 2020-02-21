@@ -26,10 +26,15 @@
                     $_SESSION['userId'] =  $row['id'];
                     echo "<br>session id:" . $_SESSION['userId'];
                 }
+                else {
+                    //take them back to the signIn.php. password doesn't match
+                    header('Location: signIn.php');
+                    die();
+                }
             }
         }
         else {
-               //take them back to the signIn.php
+               //take them back to the signIn.php. no matching email
                header('Location: signIn.php');
                die();
         }
