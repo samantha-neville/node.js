@@ -25,6 +25,8 @@
                     session_start();
                     $_SESSION['userId'] =  $row['id'];
                     echo "<br>session id:" . $_SESSION['userId'];
+                    header('Location: index.php');
+                    die();
                 }
                 else {
                     //take them back to the signIn.php. password doesn't match
