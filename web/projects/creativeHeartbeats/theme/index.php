@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if (isset($_SESSION['userId']))
+{
+  $userId = $_SESSION['userId'];
+  echo 'we got em';
+}
+// else
+// {
+// 	header("Location: signIn.php");
+// 	die(); // we always include a die after redirects.
+// }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
