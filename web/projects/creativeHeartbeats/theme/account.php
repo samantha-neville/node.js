@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Creative Heartbeats Retreats | Sign In</title>
+<title>Creative Heartbeats Retreats | Account</title>
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,19 +19,10 @@
     require 'navbar.php';
 ?>
 <br><br><br>
-<div class="container2">
 
-<h1>Sign In</h1>
-<form action="validateSignIn.php" method="POST">
-    <!--Email -->
-    <label for="email" required>Email</label>
-    <input type='email' class='stuff' type="text" id="email" name="email" placeholder="example@example.com" required>
-    <!-- Password -->
-    <label for="password">Password</label>
-    <input class='stuff' type="password" id="password" name="password" placeholder="password">
-    <input type="submit" class='submit'  value="Log In">
-  </form>
-</div>
+<h1>Your Account</h1>
+
+
 </body>
 </html> 
  

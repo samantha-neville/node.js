@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+<title>Creative Heartbeats Retreats | About</title>
 
-</style>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom fonts for this template -->
