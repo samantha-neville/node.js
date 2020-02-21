@@ -77,7 +77,7 @@
         }
         else {
                 //take them back to the signIn.php. no matching email
-                echo "<h2 class='err-message'>No matching email. Redirect you to sign up!<h2>";
+                echo "<h2 class='err-message'>No matching email. Redirecting you to sign up page.<h2>";
                 header('Refresh: 5; URL=signUp.php');   
                 die();
         }

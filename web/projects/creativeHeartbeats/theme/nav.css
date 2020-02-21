@@ -134,10 +134,11 @@ p {
    }
 
    .err-message {
-    color:red;
+    color:white;
     border-style: solid;
     border-width: 1px;
     border-color: red;
+    background:red;
     padding: 20px;
     margin: 20px;
     /* text-align: center; */
