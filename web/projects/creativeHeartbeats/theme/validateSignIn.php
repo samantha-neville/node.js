@@ -30,15 +30,17 @@
                 }
                 else {
                     //take them back to the signIn.php. password doesn't match
-                    header('Location: signIn.php');
+                    echo "Wrong Password";
+                    header('Refresh: 5; URL=signIn.php');   
                     die();
                 }
             }
         }
         else {
-               //take them back to the signIn.php. no matching email
-               header('Location: signIn.php');
-               die();
+                //take them back to the signIn.php. no matching email
+                echo "No matching email";
+                header('Refresh: ; URL=signIn.php');   
+                die();
         }
     }
    catch(Exception $e) {
