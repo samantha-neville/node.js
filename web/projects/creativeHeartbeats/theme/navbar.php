@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <link href="nav.css" rel="stylesheet" type="text/css">
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
@@ -14,5 +18,12 @@
       </ul>
     </div>
     <a class="active right-margin3" href="signUp.php">Sign Up</a>
-    <a class="active" href="signIn.php">Sign In</a>
+    <a class="active right-margin3" href="signIn.php">Sign In</a>
+    <?php    
+      if (isset($_SESSION['userId']))
+      {
+        $userId = $_SESSION['userId'];
+        echo "<a class='active' href='account.php'>My Account</a>";
+      }
+    ?>
   </nav>
