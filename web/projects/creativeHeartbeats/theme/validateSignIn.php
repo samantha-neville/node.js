@@ -11,7 +11,7 @@
    
    //look to see if this email is indeed in our database (!!NEED TO MAKE EMAIL UNIQUE IN DATABASE!!)
    try {
-        $query = "SELECT id FROM users WHERE email='$email'";
+        $query = "SELECT id, password FROM users WHERE email='$email'";
         echo "<br>query:$query<br>";
         $user = $db->prepare($query);
         $user->execute();
@@ -19,7 +19,7 @@
             //they are already in the database. get their user id, and use it find their current host id
             while($row = $user->fetch(PDO::FETCH_ASSOC)) {
                 $hashed_password = $row['password'];
-                echo "<br>hashedPassword:$hashed_password";
+                echo "<br>hashedPassword: $hashed_password";
                 if(password_verify($password, $hashed_password)) {
                     echo "<br>we have a matched email/password combo";
                     session_start();
