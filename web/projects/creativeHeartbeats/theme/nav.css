@@ -137,8 +137,8 @@ p {
     color:white;
     border-style: solid;
     border-width: 1px;
-    border-color: red;
-    background:red;
+    border-color: #c42116;
+    background:#c42116;
     padding: 20px;
     margin: 20px;
     /* text-align: center; */

@@ -69,7 +69,7 @@
                 }
                 else {
                     //take them back to the signIn.php. password doesn't match
-                    echo "<h2 class='err-message'>Wrong Password</h2>";
+                    echo "<h2 class='err-message'>Incorrect password. Please try again.</h2>";
                     header('Refresh: 3; URL=signIn.php');   
                     die();
                 }
