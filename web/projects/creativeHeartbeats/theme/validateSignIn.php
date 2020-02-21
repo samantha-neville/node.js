@@ -27,8 +27,11 @@
                     echo "<br>session id:" . $_SESSION['userId'];
                 }
             }
-            //    header('Location: signIn.php');
-            die();
+        }
+        else {
+               //take them back to the signIn.php
+               header('Location: signIn.php');
+               die();
         }
     }
    catch(Exception $e) {
