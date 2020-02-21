@@ -70,7 +70,7 @@
                 else {
                     //take them back to the signIn.php. password doesn't match
                     echo "<h2 class='err-message'>Incorrect password. Please try again.</h2>";
-                    // header('Refresh: 3; URL=signIn.php');   
+                    header('Refresh: 3; URL=signIn.php');   
                     die();
                 }
             }
@@ -78,7 +78,7 @@
         else {
                 //take them back to the signIn.php. no matching email
                 echo "<h2 class='err-message'>No matching email. Redirecting you to sign up page.<h2>";
-                header('Refresh: 5; URL=signUp.php');   
+                // header('Refresh: 5; URL=signUp.php');   
                 die();
         }
     }
