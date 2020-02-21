@@ -18,12 +18,23 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover:not(active){
   background-color: #111;
+  text-decoration: none;
+  color:white;
 }
 
 .active {
   background-color: #4CAF50;
+  padding:14px;
+  color:white;
+}
+
+.active:hover {
+  background-color: #008080;
+  color:white;
+  text-decoration: none;
+
 }
 
 h1 {
@@ -117,3 +128,7 @@ p {
   .right-margin2 {
     margin:30px 47%;
   }
+
+  .right-margin3 { 
+    margin-right:10px;
+   }

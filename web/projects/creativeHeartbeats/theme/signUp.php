@@ -23,7 +23,7 @@
 <div class="container2">
 
 <h1>Sign Up</h1>
-<form action="insertUser.php" method="POST">
+<form action="insertNewUser.php" method="POST">
     <!--First Name -->
     <label for="fname">First Name</label>
     <input class='stuff' type="text" id="fname" name="first" placeholder="Your first name.." required>
