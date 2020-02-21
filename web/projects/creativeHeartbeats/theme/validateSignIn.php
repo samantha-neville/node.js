@@ -45,31 +45,31 @@
     //get the email and password from their login attempt
     $email    = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
-    echo "password:$password";
-    echo "<br>email:$email";
+    // echo "password:$password";
+    // echo "<br>email:$email";
    
    //look to see if this email is indeed in our database (!!NEED TO MAKE EMAIL UNIQUE IN DATABASE!!)
    try {
         $query = "SELECT id, password FROM users WHERE email='$email'";
-        echo "<br>query:$query<br>";
+        // echo "<br>query:$query<br>";
         $user = $db->prepare($query);
         $user->execute();
         if ($user->rowCount() > 0) {
             //they are already in the database. get their user id, and use it find their current host id
             while($row = $user->fetch(PDO::FETCH_ASSOC)) {
                 $hashed_password = $row['password'];
-                echo "<br>hashedPassword: $hashed_password";
+                // echo "<br>hashedPassword: $hashed_password";
                 if(password_verify($password, $hashed_password)) {
-                    echo "<br>we have a matched email/password combo";
+                    // echo "<br>we have a matched email/password combo";
                     session_start();
                     $_SESSION['userId'] =  $row['id'];
-                    echo "<br>session id:" . $_SESSION['userId'];
+                    // echo "<br>session id:" . $_SESSION['userId'];
                     header('Location: index.php');
                     die();
                 }
                 else {
                     //take them back to the signIn.php. password doesn't match
-                    echo "Wrong Password";
+                    echo "<h2 class='err-message'>Wrong Password</h2>";
                     header('Refresh: 3; URL=signIn.php');   
                     die();
                 }
@@ -77,7 +77,7 @@
         }
         else {
                 //take them back to the signIn.php. no matching email
-                echo "No matching email";
+                echo "<h2 class='err-message'>No matching email<h2>";
                 header('Refresh: 3; URL=signIn.php');   
                 die();
         }
