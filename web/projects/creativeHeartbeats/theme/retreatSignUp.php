@@ -1,9 +1,9 @@
 <?php
-    $name = htmlspecialchars($_POST['name']);
-    $location = htmlspecialchars($_POST['location']);
-    $price = htmlspecialchars($_POST['price']);
-    $size = htmlspecialchars($_POST['size']);
-    $language = htmlspecialchars($_POST['language']);
+    $name = htmlspecialchars($_GET['name']);
+    $location = htmlspecialchars($_GET['location']);
+    $price = htmlspecialchars($_GET['price']);
+    $size = htmlspecialchars($_GET['size']);
+    $language = htmlspecialchars($_GET['language']);
     echo "nada: $name $location $price $size $language";
 
     //session user is not set
