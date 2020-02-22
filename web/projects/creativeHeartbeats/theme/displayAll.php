@@ -33,7 +33,7 @@
 .flex-container > div {
     background-color: #f1f1f1;
     width: 80%;
-    margin: 10px;
+    margin: 10px 25px;
     text-align: center;
     text-align: center;
     /* margin:10px 10% 10px 10%; */
