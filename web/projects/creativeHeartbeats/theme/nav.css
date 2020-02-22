@@ -172,3 +172,7 @@ p {
    .no-margin {
      margin:0px;
    }
+
+   .margin-40 {
+     margin-top:40px;
+   }
