@@ -112,7 +112,7 @@ require 'navbar.php';
           <p class='left-align'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>       
     </div>";
 
-    if ($count % 2 == 0) {
+    if ($count % 2 == 0 || $count % 3 == 0) {
         echo "
         <div class='flex-container'>
         <div>
@@ -143,7 +143,7 @@ require 'navbar.php';
         </div>";
     }
 
-    echo "</div>";
+    // echo "</div>";
 
     $count = $count + 1;
 }
