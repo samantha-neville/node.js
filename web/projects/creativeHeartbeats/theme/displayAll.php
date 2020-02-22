@@ -1,11 +1,11 @@
 <?php
-    // require 'dbConnection.php';
-    // $db = getDB();
+    require 'dbConnection.php';
+    $db = getDB();
 
-    // //SELECT ALL OF THE RETREATS FROM THE DB
-    // $query = "SELECT * FROM retreats";
-    // $retreats = $db->prepare($query);
-    // $retreats->execute();
+    //SELECT ALL OF THE RETREATS FROM THE DB
+    $query = "SELECT * FROM retreats";
+    $retreats = $db->prepare($query);
+    $retreats->execute();
 
     ?>
   
