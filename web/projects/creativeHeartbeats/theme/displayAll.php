@@ -99,7 +99,7 @@ require 'navbar.php';
 
     }
 
-    if ($count % 2 == 0) {
+    if ($count % 3 == 0) {
         echo "
         <div class='flex-container'>
         <div>
