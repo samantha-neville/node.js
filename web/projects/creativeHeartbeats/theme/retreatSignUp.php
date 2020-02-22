@@ -16,6 +16,7 @@
         echo "nada: $name $location $price $size $language";
 
         $query1 = "SELECT * FROM retreat WHERE name='$name' AND description='$desc'";
+        echo $query1;
         $retreat = $db->prepare($query1);
         $retreat->execute();
         while($row  = $retreat->fetch(PDO::FETCH_ASSOC)) {
