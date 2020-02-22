@@ -70,7 +70,7 @@ require 'navbar.php';
 ?>
 <br><br><br>
 <h1>Retreats for You</h1>
-
+<br><br>
 <!-- <p>Click on a retreat to learn more!</p> -->
 
 <?php
