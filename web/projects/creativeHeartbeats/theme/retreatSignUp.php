@@ -4,7 +4,7 @@
     $price = htmlspecialchars($_POST['price']);
     $size = htmlspecialchars($_POST['size']);
     $language = htmlspecialchars($_POST['language']);
-    echo "$name $location $price $size $language";
+    echo "nada: $name $location $price $size $language";
 
     //session user is not set
     if (true)
