@@ -145,3 +145,20 @@ p {
     width: 38%
 
    }
+
+   .search-btn {
+    height: 70px;
+    width: 100%;
+    background: #008080;
+    /* white-space: nowrap; */
+    border-radius: .5px;
+    font-size: 18px;
+    color: #fff;
+    /* transition: all .2s ease-out, color .2s ease-out; */
+    border: 0;
+    cursor: pointer;
+    /* font-weight: 400; */
+    font-family: 'Poppins', sans-serif;
+    padding:20px;
+    margin:10px 43%;
+   }
