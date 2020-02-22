@@ -2,7 +2,7 @@
     session_start();
     require 'dbConnection.php';
     $db = getDB();
-    
+
     $name = htmlspecialchars($_GET['name']);
     $location = htmlspecialchars($_GET['location']);
     $price = htmlspecialchars($_GET['price']);
@@ -28,10 +28,11 @@
         }
 
 
-        // $query2 = "INSERT INTO attendees (user_id, retreat_id) VALUES ($userId, $retreatId)";
-        // $attendee = $db->prepare($query2);
-        // $attendee->execute();
+        $query2 = "INSERT INTO attendees (user_id, retreat_id) VALUES ($userId, $retreatId)";
+        $attendee = $db->prepare($query2);
+        $attendee->execute();
 
+        require 'thankYou.php';
 
 
     }
