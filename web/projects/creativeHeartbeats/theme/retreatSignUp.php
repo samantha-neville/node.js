@@ -1,5 +1,7 @@
 <?php
     session_start();
+    require 'dbConnection.php';
+    $db = getDB();
     
     $name = htmlspecialchars($_GET['name']);
     $location = htmlspecialchars($_GET['location']);
