@@ -32,19 +32,19 @@
 
 .flex-container > div {
     background-color: #f1f1f1;
-    /* width: 80%;
+    width: 80%;
     margin: 10px;
     text-align: center;
     text-align: center;
     margin:10px 10% 10px 10%;
     padding:20px;
-    border-radius:10px; */
-    background-color: #f1f1f1;
+    border-radius:10px;
+    /* background-color: #f1f1f1;
   width: 100px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
-  font-size: 30px;
+  font-size: 30px; */
 }
 
 h1 {
@@ -73,30 +73,6 @@ require 'navbar.php';
 
 <!-- <p>Click on a retreat to learn more!</p> -->
 
-<div class="flex-container">
-
-<!-- <div>
-      <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
-          <br><b><p class='left-align'>Location:</b> $location</p>
-          <b><p class='left-align'>Price:</b> $$price</p>
-          <b><p class='left-align'>Language:</b> $lang</p>
-          <b><p class='left-align'>Group Size:</b> $size people</p>
-          <b><p class='left-align'>Duration:</b> $duration days</p>
-          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
-          <b><p class='left-align'>About the host:</b> $host</p><br>
-          <p class='left-align'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>
-</div>
-
-<div>
-      <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
-          <br><b><p class='left-align'>Location:</b> $location</p>
-          <b><p class='left-align'>Price:</b> $$price</p>
-          <b><p class='left-align'>Language:</b> $lang</p>
-          <b><p class='left-align'>Group Size:</b> $size people</p>
-          <b><p class='left-align'>Duration:</b> $duration days</p>
-          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
-          <b><p class='left-align'>About the host:</b> $host</p><br>
-</div> -->
 <?php
   while($rRow  = $retreats->fetch(PDO::FETCH_ASSOC)) {
     $name     = $rRow['name'];
@@ -122,6 +98,7 @@ require 'navbar.php';
 
 
     echo "
+    <div class='flex-container'>
     <div>
       <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
           <br><b><p class='left-align'>Location:</b> $location</p>
@@ -132,10 +109,11 @@ require 'navbar.php';
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
           <b><p class='left-align'>About the host:</b> $host</p>  
           <p class='left-align margin-40'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>
+    </div>
     </div>";
 }
 ?>
-</div>
+
 
 </body>
 </html> 
