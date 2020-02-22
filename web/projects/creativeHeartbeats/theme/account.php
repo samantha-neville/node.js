@@ -1,3 +1,19 @@
+<?php
+    session_start();
+    if (isset($_SESSION['userId']))
+    {
+      $userId = $_SESSION['userId'];
+
+      require 'dbConnection.php';
+      $db = getDB();
+    
+      $query = "SELECT * FROM users WHERE id=$userId";
+      $user = $db->prepare($query);
+      $user->execute();
+    }
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +29,40 @@
 <!-- Custom styles for this template -->
 <link href="css/landing-page.min.css" rel="stylesheet">
 <!-- <link href="nav.css" rel="stylesheet" type="text/css"> -->
+<style>
+/* flexbox stuff is from w3 schools */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 80%;
+    margin: 10px;
+    text-align: center;
+    text-align: center;
+    margin:10px 10% 10px 10%;
+    padding:20px;
+    border-radius:10px;
+}
+
+h1 {
+    text-align:center;
+}
+p {
+    text-align:center;
+}
+.left-align {
+  text-align:left;
+}
+.column {
+  max-width:50%;
+}
+.retreat-title {
+  font-size:18px;
+}
+</style>
 </head>
 <body>
 <?php
@@ -22,7 +72,29 @@
 
 <h1>Your Account</h1>
 
+<div class="flex-container">
 
 </body>
 </html> 
+
+<?php
+  while($row  = $user->fetch(PDO::FETCH_ASSOC)) {
+    $name     = $row['name'];
+    $last     = $row['last_name'];
+    $email    = $row['email'];
+    $id       = $row['id'];
+   
+    echo "
+    <div>
+          <br><b><p class='left-align'>Name:</b> $name $last</p>
+          <b><p class='left-align'>Email:</b> $email</p>
+          <b><p class='left-align'>User ID:</b> $id</p>
+    </div>";
+}
+
+</div>
+
+
+
+?>
  
