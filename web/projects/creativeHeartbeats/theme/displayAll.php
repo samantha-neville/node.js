@@ -26,7 +26,7 @@
 /* flexbox stuff is from w3 schools */
 .flex-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .flex-container > div {
