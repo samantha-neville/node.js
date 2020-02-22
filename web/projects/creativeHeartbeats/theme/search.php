@@ -104,7 +104,8 @@ require 'navbar.php';
           <b><p class='left-align'>Group Size:</b> $size people</p>
           <b><p class='left-align'>Duration:</b> $duration days</p>
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
-          <b><p class='left-align'>About the host:</b> $host</p>       
+          <b><p class='left-align'>About the host:</b> $host</p>
+          <p class='left-align'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>       
     </div>";
 }
 

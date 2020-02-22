@@ -1,11 +1,11 @@
 <?php
-    require 'dbConnection.php';
-    $db = getDB();
+    // require 'dbConnection.php';
+    // $db = getDB();
 
-    //SELECT ALL OF THE RETREATS FROM THE DB
-    $query = "SELECT * FROM retreats";
-    $retreats = $db->prepare($query);
-    $retreats->execute();
+    // //SELECT ALL OF THE RETREATS FROM THE DB
+    // $query = "SELECT * FROM retreats";
+    // $retreats = $db->prepare($query);
+    // $retreats->execute();
 
     ?>
   
@@ -67,6 +67,29 @@ require 'navbar.php';
 <!-- <p>Click on a retreat to learn more!</p> -->
 
 <div class="flex-container">
+
+<!-- <div>
+      <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
+          <br><b><p class='left-align'>Location:</b> $location</p>
+          <b><p class='left-align'>Price:</b> $$price</p>
+          <b><p class='left-align'>Language:</b> $lang</p>
+          <b><p class='left-align'>Group Size:</b> $size people</p>
+          <b><p class='left-align'>Duration:</b> $duration days</p>
+          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
+          <b><p class='left-align'>About the host:</b> $host</p><br>
+          <p class='left-align'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>
+</div>
+
+<div>
+      <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
+          <br><b><p class='left-align'>Location:</b> $location</p>
+          <b><p class='left-align'>Price:</b> $$price</p>
+          <b><p class='left-align'>Language:</b> $lang</p>
+          <b><p class='left-align'>Group Size:</b> $size people</p>
+          <b><p class='left-align'>Duration:</b> $duration days</p>
+          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
+          <b><p class='left-align'>About the host:</b> $host</p><br>
+</div> -->
 <?php
   while($rRow  = $retreats->fetch(PDO::FETCH_ASSOC)) {
     $name     = $rRow['name'];
@@ -100,28 +123,10 @@ require 'navbar.php';
           <b><p class='left-align'>Group Size:</b> $size people</p>
           <b><p class='left-align'>Duration:</b> $duration days</p>
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
-          <b><p class='left-align'>About the host:</b> $host</p>       
+          <b><p class='left-align'>About the host:</b> $host</p>  
+          <p class='left-align'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>
     </div>";
 }
-
-//idea: splitting it into columns and having a register button on the right side
-// echo "
-// <div>
-//   <div class='row'>
-//   <p><b class='retreat-title>$name</b><br><br> $desc</p><br><br>
-//     <div class='column'>
-//       <br><b><p class='left-align'>Location:</b> $location</p>
-//       <b><p class='left-align'>Price:</b> $$price</p>
-//       <b><p class='left-align'>Language:</b> $lang</p>
-//       <b><p class='left-align'>Group Size:</b> $size people</p>
-//       <b><p class='left-align'>Duration:</b> $duration days</p>
-//       <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>
-//     </div>
-//     <div class='column'>
-//       <button>Register</button>
-//     </div>
-//   </div>
-// </div>";
 ?>
 </div>
 
