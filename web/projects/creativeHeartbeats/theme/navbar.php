@@ -17,8 +17,6 @@ session_start();
         <li><a href="contact.php">Contact</a></li>
       </ul>
     </div>
-    <a class="active right-margin3" href="signUp.php">Sign Up</a>
-    <a class="active right-margin3" href="signIn.php">Sign In</a>
     <?php    
       if (isset($_SESSION['userId']))
       {
