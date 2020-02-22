@@ -67,7 +67,6 @@ p {
     <p><b class='retreat-title'>Thank you for signing up for $name!</b></p><br>
           <br><b><p class='left-align'>Price:</b> $price will be billed to your accound within 3 business days.</p>
     </div>";
-}
 ?>
  
 
