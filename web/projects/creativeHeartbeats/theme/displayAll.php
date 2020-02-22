@@ -112,7 +112,6 @@ require 'navbar.php';
               <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
               <b><p class='left-align'>About the host:</b> $host</p>  
               <p class='left-align margin-40'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>
-        </div>
         </div>";
     }
     else {
@@ -127,6 +126,7 @@ require 'navbar.php';
               <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
               <b><p class='left-align'>About the host:</b> $host</p>  
               <p class='left-align margin-40'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>
+        </div>
         </div>";
     }
 
