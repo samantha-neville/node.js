@@ -32,7 +32,7 @@
 
 .flex-container > div {
     background-color: #f1f1f1;
-    width: 80%;
+    width: 40%;
     margin: 10px;
     text-align: center;
     text-align: center;
