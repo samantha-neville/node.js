@@ -15,16 +15,16 @@
     {
         //session user is not set
         $userId = $_SESSION['userId'];
-        echo "nada: $name $location $price $size $language";
+        // echo "nada: $name $location $price $size $language";
 
         $query1 = "SELECT * FROM retreats WHERE name='$name'";
-        echo $query1;
+        // echo $query1;
         $retreat = $db->prepare($query1);
         $retreat->execute();
         while($row  = $retreat->fetch(PDO::FETCH_ASSOC)) {
             $retreatId = $row['id'];
-            echo "retreatId $retreatId";
-            echo "userID $userId";
+            // echo "retreatId $retreatId";
+            // echo "userID $userId";
         }
 
 
