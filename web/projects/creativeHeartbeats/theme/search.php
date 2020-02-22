@@ -108,7 +108,7 @@ require 'navbar.php';
           <b><p class='left-align'>Duration:</b> $duration days</p>
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
           <b><p class='left-align'>About the host:</b> $host</p>
-          <p class='left-align margin-40'><button class='search-btn no-margin' type='submit' href='signUp.php'>Sign Up</button></p>       
+          <p class='left-align margin-40'><button class='search-btn no-margin' type='submit' href='retreatSignUp.php'>Sign Up</button></p>       
     </form>
     </div>";
 
