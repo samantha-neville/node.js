@@ -27,7 +27,7 @@
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 .flex-container > div {
