@@ -72,6 +72,7 @@ require 'navbar.php';
 <h1>Retreats for You</h1>
 <br><br>
 <!-- <p>Click on a retreat to learn more!</p> -->
+<div class='flex-container'>
 
 <?php
   $count = 0;
@@ -100,6 +101,7 @@ require 'navbar.php';
     }
 
     echo "
+
     <div>
       <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
           <br><b><p class='left-align'>Location:</b> $location</p>
@@ -147,7 +149,7 @@ require 'navbar.php';
     // $count = $count + 1;
 }
 ?>
-
+</div>
 
 </body>
 </html> 
