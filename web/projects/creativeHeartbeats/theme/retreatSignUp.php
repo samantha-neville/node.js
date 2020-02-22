@@ -22,9 +22,12 @@
             $retreatId = $row['id'];
         }
 
-        $query2 = "INSERT INTO attendees (user_id, retreat_id) VALUES ($userId, $retreatId)";
-        $attendee = $db->prepare($query2);
-        $attendee->execute();
+        echo "retreatId $retreatId";
+        echo "userID $userId";
+
+        // $query2 = "INSERT INTO attendees (user_id, retreat_id) VALUES ($userId, $retreatId)";
+        // $attendee = $db->prepare($query2);
+        // $attendee->execute();
 
 
 
