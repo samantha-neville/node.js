@@ -15,7 +15,7 @@
         $userId = $_SESSION['userId'];
         echo "nada: $name $location $price $size $language";
 
-        $query1 = "SELECT * FROM retreat WHERE name='$name'";
+        $query1 = "SELECT * FROM retreats WHERE name='$name'";
         echo $query1;
         $retreat = $db->prepare($query1);
         $retreat->execute();
