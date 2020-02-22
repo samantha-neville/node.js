@@ -101,7 +101,7 @@ require 'navbar.php';
     }
 
     echo "
-
+    <form>
     <div>
       <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
           <br><b><p class='left-align'>Location:</b> $location</p>
@@ -111,8 +111,9 @@ require 'navbar.php';
           <b><p class='left-align'>Duration:</b> $duration days</p>
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
           <b><p class='left-align'>About the host:</b> $host</p>
-          <p class='left-align margin-40'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>       
-    </div>";
+          <p class='left-align margin-40'><button class='search-btn no-margin' type='submit' href='signUp.php'>Sign Up</button></p>       
+    </div>
+    </form>";
 
     // if ($count % 2) {
     //     echo "
