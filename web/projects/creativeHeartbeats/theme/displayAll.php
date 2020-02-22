@@ -143,6 +143,7 @@ require 'navbar.php';
         </div>";
     }
 
+    echo "</div>";
 
     $count = $count + 1;
 }
