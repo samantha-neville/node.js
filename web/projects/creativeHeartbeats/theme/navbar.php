@@ -21,7 +21,7 @@ session_start();
       if (isset($_SESSION['userId']))
       {
         $userId = $_SESSION['userId'];
-        echo "<a class='active right-margin3' href='signOut.php'>Sign Out</a>";
+        echo "<a class='active right-margin3' href='logout.php'>Sign Out</a>";
         echo "<a class='active' href='account.php'>My Account</a>";
       }
       else {
