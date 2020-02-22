@@ -96,7 +96,19 @@ require 'navbar.php';
     }
 
 
-  
+    echo "
+    <div>
+      <p><b class='retreat-title'>$name</b><br><br> $desc</p><br><br>
+          <br><b><p class='left-align'>Location:</b> $location</p>
+          <b><p class='left-align'>Price:</b> $$price</p>
+          <b><p class='left-align'>Language:</b> $lang</p>
+          <b><p class='left-align'>Group Size:</b> $size people</p>
+          <b><p class='left-align'>Duration:</b> $duration days</p>
+          <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
+          <b><p class='left-align'>About the host:</b> $host</p>
+          <p class='left-align'><a class='search-btn no-margin' href='displayAll.php'>Sign Up</a></p>       
+    </div>";
+
     if ($count % 2 == 0) {
       echo "
       <div class='flex-container'>
@@ -130,6 +142,26 @@ require 'navbar.php';
 
 
   $count = $count + 1;
+}
+
+//idea: splitting it into columns and having a register button on the right side
+// echo "
+// <div>
+//   <div class='row'>
+//   <p><b class='retreat-title>$name</b><br><br> $desc</p><br><br>
+//     <div class='column'>
+//       <br><b><p class='left-align'>Location:</b> $location</p>
+//       <b><p class='left-align'>Price:</b> $$price</p>
+//       <b><p class='left-align'>Language:</b> $lang</p>
+//       <b><p class='left-align'>Group Size:</b> $size people</p>
+//       <b><p class='left-align'>Duration:</b> $duration days</p>
+//       <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>
+//     </div>
+//     <div class='column'>
+//       <button>Register</button>
+//     </div>
+//   </div>
+// </div>";
 ?>
 </div>
 
