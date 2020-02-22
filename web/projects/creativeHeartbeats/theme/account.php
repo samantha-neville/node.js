@@ -91,10 +91,7 @@ p {
           <b><p class='left-align'>User ID:</b> $id</p>
     </div>";
 }
-
-</div>
-
-
-
 ?>
  
+
+</div>
