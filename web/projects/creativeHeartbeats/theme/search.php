@@ -99,7 +99,7 @@ require 'navbar.php';
 
     echo "
     <div>
-    <form>
+    <form action='retreatSignUp.php' method='POST'>
       <p><b value='$name' name='name' class='retreat-title'>$name</b><br><br> $desc</p><br><br><br>
           <b><p value='$location' name='location' class='left-align'>Location:</b> $location</p>
           <b><p value='$price' name='price' class='left-align'>Price:</b> $$price</p>
@@ -108,7 +108,7 @@ require 'navbar.php';
           <b><p class='left-align'>Duration:</b> $duration days</p>
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
           <b><p class='left-align'>About the host:</b> $host</p>
-          <p class='left-align margin-40'><button class='search-btn no-margin' type='submit' href='retreatSignUp.php'>Sign Up</button></p>       
+          <p class='left-align margin-40'><button class='search-btn no-margin' type='submit'>Sign Up</button></p>       
     </form>
     </div>";
 
