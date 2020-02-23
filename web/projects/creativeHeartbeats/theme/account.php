@@ -73,10 +73,6 @@ p {
 <h1>Your Account</h1>
 
 <div class="flex-container">
-
-</body>
-</html> 
-
 <?php
   while($row  = $user->fetch(PDO::FETCH_ASSOC)) {
     $name     = $row['name'];
@@ -92,6 +88,25 @@ p {
     </div>";
 }
 ?>
- 
-
 </div>
+
+<!-- retreats you have signed up for -->
+<div class="flex-container">
+<?php
+
+    // $query = "";
+    // $user = $db->prepare($query);
+    // $user->execute();
+   
+    // echo "
+    // <div>
+    //       <br><b><p class='left-align'>Name:</b> $name $last</p>
+    //       <b><p class='left-align'>Email:</b> $email</p>
+    //       <b><p class='left-align'>User ID:</b> $id</p>
+    // </div>";
+}
+?>
+</div>
+
+</body>
+</html> 
