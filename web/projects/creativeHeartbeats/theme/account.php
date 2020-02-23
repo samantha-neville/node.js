@@ -119,7 +119,7 @@ p {
 <div class="flex-container">
 <?php
 
-    $query1 = "SELECT host_id FROM hosts WHERE user_id=$userId";
+    $query1 = "SELECT id FROM hosts WHERE user_id=$userId";
     $host1 = $db->prepare($query1);
     $host1->execute();
    
