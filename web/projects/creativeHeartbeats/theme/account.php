@@ -95,22 +95,19 @@ p {
 <?php
 
     $query2 = "SELECT attendees.user_id, attendees.retreat_id, retreats.id, retreats.name, retreats.price FROM attendees FULL OUTER JOIN retreats ON attendees.retreat_id = retreats.id WHERE attendees.user_id = $userId";
-    // $userRetreats = $db->prepare($query2);
-    // $userRetreats->execute();
+    $userRetreats = $db->prepare($query2);
+    $userRetreats->execute();
    
-    // while($row2  = $userRetreats->fetch(PDO::FETCH_ASSOC)) {
-    //     // $name     = $row2['name'];
-    //     // $last     = $row2['last_name'];
-    //     // $email    = $row2['email'];
-    //     // $id       = $row2['id'];
+    while($row2  = $userRetreats->fetch(PDO::FETCH_ASSOC)) {
+        $name   = $row2['name'];
+        $price   = $row2['price'];
        
-    //     echo "
-    //     <div>
-    //           <br><b><p class='left-align'>Name:</b> 1</p>
-    //           <b><p class='left-align'>Email:</b> </p>
-    //           <b><p class='left-align'>User ID:</b> </p>
-    //     </div>";
-    // }
+        echo "
+        <div>
+              <br><b><p class='left-align'>Retreat Name:</b>$name</p>
+              <b><p class='left-align'>Price:</b>$price</p>
+        </div>";
+    }
     echo "query2 $query2";
 
 ?>
