@@ -119,7 +119,15 @@ p {
 <div class="flex-container">
 <?php
 
-    $query2 = "SELECT attendees.user_id, attendees.retreat_id, retreats.id, retreats.name, retreats.price FROM attendees FULL OUTER JOIN retreats ON attendees.retreat_id = retreats.id WHERE retreats.host_id = $userId";
+    $query1 = "SELECT host_id FROM hosts WHERE user_id=$userId";
+    $host1 = $db->prepare($query1);
+    $host1->execute();
+   
+    while($row1  = $host1->fetch(PDO::FETCH_ASSOC)) {
+        $hostId  = $row1['id'];
+    }
+
+    $query2 = "SELECT attendees.user_id, attendees.retreat_id, retreats.id, retreats.name, retreats.price FROM attendees FULL OUTER JOIN retreats ON attendees.retreat_id = retreats.id WHERE retreats.host_id = $hostId";
     $userRetreats = $db->prepare($query2);
     $userRetreats->execute();
    
