@@ -94,17 +94,25 @@ p {
 <div class="flex-container">
 <?php
 
-    // $query = "";
-    // $user = $db->prepare($query);
-    // $user->execute();
+    $query2 = "SELECT attendees.user_id, attendees.retreat_id, retreats.id, retreats.name, retreats.price FROM attendees FULL OUTER JOIN retreats ON attendees.retreat_id = retreats.id WHERE attendees.user_id = $userId";
+    // $userRetreats = $db->prepare($query2);
+    // $userRetreats->execute();
    
-    // echo "
-    // <div>
-    //       <br><b><p class='left-align'>Name:</b> $name $last</p>
-    //       <b><p class='left-align'>Email:</b> $email</p>
-    //       <b><p class='left-align'>User ID:</b> $id</p>
-    // </div>";
-}
+    // while($row2  = $userRetreats->fetch(PDO::FETCH_ASSOC)) {
+    //     // $name     = $row2['name'];
+    //     // $last     = $row2['last_name'];
+    //     // $email    = $row2['email'];
+    //     // $id       = $row2['id'];
+       
+    //     echo "
+    //     <div>
+    //           <br><b><p class='left-align'>Name:</b> 1</p>
+    //           <b><p class='left-align'>Email:</b> </p>
+    //           <b><p class='left-align'>User ID:</b> </p>
+    //     </div>";
+    // }
+    echo "query2 $query2";
+
 ?>
 </div>
 
