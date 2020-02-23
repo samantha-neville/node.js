@@ -29,22 +29,22 @@
                 $userId = $row['id'];
                 //query 2: use their user id to find their host id
                 $query2 = "SELECT * FROM hosts WHERE user_id=$userId";
-                $host = $db->prepare($query2);
-                $host->execute();
-                if ($host->rowCount() > 0) {
+                $host1 = $db->prepare($query2);
+                $host1->execute();
+                if ($host1->rowCount() > 0) {
                     //the user is in the user table and host table
-                    while($row2 = $host->fetch(PDO::FETCH_ASSOC)) {
+                    while($row2 = $host1->fetch(PDO::FETCH_ASSOC)) {
                         $hostId = $row2['id'];
                     }
                 }
                 else {
-                    echo "we are in here<br> here is the userID $userId <br> this is host  $host<br>";
+                    // echo "we are in here<br> here is the userID $userId";
                     //the user is in the user table but not in the host table. put them in the hosts table
-                    // $query3 = "INSERT INTO hosts (user_id, about_host) VALUES ($userId, '$host')";
+                    $query3 = "INSERT INTO hosts (user_id, about_host) VALUES ($userId, '$host')";
                     // echo 'we made it past';
-                    // $host = $db->prepare($query3);
-                    // $host->execute();
-                    // $hostId = $db->lastInsertId("hosts_id_seq");
+                    $host = $db->prepare($query3);
+                    $host->execute();
+                    $hostId = $db->lastInsertId("hosts_id_seq");
                 }
 
             }
