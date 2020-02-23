@@ -89,7 +89,7 @@ p {
 }
 ?>
 </div>
-
+<br><br>
 <!-- retreats you have signed up for -->
 <h1>Retreats You're Attending</h1>
 <div class="flex-container">
@@ -109,11 +109,11 @@ p {
               <b><p class='left-align'>Price:</b>$price</p>
         </div>";
     }
-    echo "query2 $query2";
+    // echo "query2 $query2";
 
 ?>
 </div>
-
+<br><br>
 <!-- retreats you have signed up for -->
 <h1>Retreats You're Hosting</h1>
 <div class="flex-container">
@@ -133,7 +133,7 @@ p {
               <b><p class='left-align'>Price:</b>$price</p>
         </div>";
     }
-    echo "query2 $query2";
+    // echo "query2 $query2";
 
 ?>
 </div>
