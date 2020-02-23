@@ -91,6 +91,7 @@ p {
 </div>
 
 <!-- retreats you have signed up for -->
+<h1>Retreats You're Attending</h1>
 <div class="flex-container">
 <?php
 
@@ -112,6 +113,31 @@ p {
 
 ?>
 </div>
+
+<!-- retreats you have signed up for -->
+<h1>Retreats You're Hosting</h1>
+<div class="flex-container">
+<?php
+
+    $query2 = "SELECT attendees.user_id, attendees.retreat_id, retreats.id, retreats.name, retreats.price FROM attendees FULL OUTER JOIN retreats ON attendees.retreat_id = retreats.id WHERE retreats.host_id = $userId";
+    $userRetreats = $db->prepare($query2);
+    $userRetreats->execute();
+   
+    while($row2  = $userRetreats->fetch(PDO::FETCH_ASSOC)) {
+        $name   = $row2['name'];
+        $price   = $row2['price'];
+       
+        echo "
+        <div>
+              <br><b><p class='left-align'>Retreat Name:</b>$name</p>
+              <b><p class='left-align'>Price:</b>$price</p>
+        </div>";
+    }
+    echo "query2 $query2";
+
+?>
+</div>
+
 
 </body>
 </html> 
