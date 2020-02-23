@@ -40,11 +40,11 @@
                 else {
                     echo "we are in here<br> here is the userID $userId <br> this is host  $host<br>";
                     //the user is in the user table but not in the host table. put them in the hosts table
-                    $query3 = "INSERT INTO hosts (user_id, about_host) VALUES ($userId, '$host')";
-                    echo 'we made it past';
-                    $host = $db->prepare($query3);
-                    $host->execute();
-                    $hostId = $db->lastInsertId("hosts_id_seq");
+                    // $query3 = "INSERT INTO hosts (user_id, about_host) VALUES ($userId, '$host')";
+                    // echo 'we made it past';
+                    // $host = $db->prepare($query3);
+                    // $host->execute();
+                    // $hostId = $db->lastInsertId("hosts_id_seq");
                 }
 
             }
