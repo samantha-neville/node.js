@@ -38,7 +38,7 @@
                     }
                 }
                 else {
-                    echo "we are in here<br>";
+                    echo "we are in here<br> here is the userID $userId";
                     //the user is in the user table but not in the host table. put them in the hosts table
                     $query3 = "INSERT INTO hosts (user_id, about_host) VALUES ($userId, '$host')";
                     echo "userId $userId";
