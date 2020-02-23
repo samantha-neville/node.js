@@ -105,8 +105,8 @@ p {
        
         echo "
         <div>
-              <br><b><p class='left-align'>Retreat Name:</b>$name</p>
-              <b><p class='left-align'>Price:</b>$price</p>
+              <br><b><p class='left-align'>Retreat Name:</b> $name</p>
+              <b><p class='left-align'>Price:</b> $price</p>
         </div>";
     }
     // echo "query2 $query2";
@@ -137,8 +137,8 @@ p {
        
         echo "
         <div>
-              <br><b><p class='left-align'>Retreat Name:</b>$name</p>
-              <b><p class='left-align'>Price:</b>$price</p>
+              <br><b><p class='left-align'>Retreat Name:</b> $name</p>
+              <b><p class='left-align'>Price:</b> $price</p>
         </div>";
     }
     // echo "query2 $query2";
