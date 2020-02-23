@@ -31,8 +31,18 @@
                 $query2 = "SELECT * FROM hosts WHERE user_id=$userId";
                 $host = $db->prepare($query2);
                 $host->execute();
-                while($row2 = $host->fetch(PDO::FETCH_ASSOC)) {
-                    $hostId = $row2['id'];
+                if ($user->rowCount() > 0) {
+                    //the user is in the user table and host table
+                    while($row2 = $host->fetch(PDO::FETCH_ASSOC)) {
+                        $hostId = $row2['id'];
+                    }
+                }
+                else {
+                    //the user is in the user table but not in the host table. put them in the hosts table
+                    $query3 = "INSERT INTO hosts (user_id, about_host) VALUES ($userId, '$host')";
+                    $host = $db->prepare($query3);
+                    $host->execute();
+                    $hostId = $db->lastInsertId("hosts_id_seq");
                 }
 
             }
