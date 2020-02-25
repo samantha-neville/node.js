@@ -175,3 +175,20 @@ p {
    .margin-40 {
      margin-top:40px;
    }
+
+   .search-btn2 {
+    height: 70px;
+    width: 100%;
+    background: #008080;
+    /* white-space: nowrap; */
+    border-radius: .5px;
+    font-size: 25px;
+    color: #fff;
+    /* transition: all .2s ease-out, color .2s ease-out; */
+    border: 0;
+    cursor: pointer;
+    /* font-weight: 400; */
+    font-family: 'Poppins', sans-serif;
+    padding:20px;
+    margin:40%;
+   }
