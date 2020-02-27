@@ -112,6 +112,12 @@ require 'navbar.php';
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
           <b><p class='left-align'>About the host:</b> $host</p>
           <p class='left-align margin-40'><button class='search-btn no-margin' type='submit'>Sign Up</button></p>
+          <input type='hidden' value='$name' name='name'>
+          <input type='hidden' value='$desc' name='desc'>
+          <input type='hidden' value='$location' name='location'>
+          <input type='hidden' value='$price' name='price'>
+          <input type='hidden' value='$lang' name='language'>
+          <input type='hidden' value='$size' name='size'>
     </form>
     </div>";
 
