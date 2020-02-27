@@ -192,3 +192,9 @@ p {
     padding:20px;
     margin:40%;
    }
+
+   .search-btn2:hover {
+    color:white;
+    background-color: #333;
+    text-decoration:none;
+  }
