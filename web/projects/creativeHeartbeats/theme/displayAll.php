@@ -112,7 +112,6 @@ require 'navbar.php';
           <b><p class='left-align'>Dates:</b> $sDate - $eDate</p>   
           <b><p class='left-align'>About the host:</b> $host</p>
           <p class='left-align margin-40'><button class='search-btn no-margin' type='submit'>Sign Up</button></p>
-          <h1>here we are</h1>
     </form>
     </div>";
 
