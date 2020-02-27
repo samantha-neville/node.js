@@ -140,7 +140,7 @@ require 'navbar.php';
   <div>
     <h1>or</h1>
     <br>
-    <a href='displayAll.php' class="search-btn">Display All Retreats</a>
+    <a href='displayAll.php' class="search-btn2">Display All Retreats</a>
   </div>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
