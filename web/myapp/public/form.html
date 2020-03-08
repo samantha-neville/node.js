@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    </head>
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+    <br><br>
+      <h1>Mail Something</h1>
+      <br>
+      <form action='/calculateRate' method='get'>
+      <h3>Select Type</h3>
+      <select name='type'>
+          <option value='stamped'>Letter (stamped)</option>
+          <option value='metered'>Letter (metered)<option>
+          <option value='flats'>Large Envelopes (flats)</option>
+          <option value='retail'>First-Class Package Service - Retail</option>
+      </select>
+      <br>
+      <br>
+      <label>Weight</label>
+      <input name='weight' type='text'>
+      <br>
+      <button type='submit'>Do the Math</button>
+    </form>        
+    </body>
+</html>
+ 
