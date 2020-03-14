@@ -100,5 +100,5 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 function displayRetreats(params, res) {
         // Render the response, using the EJS page "result.ejs" in the pages directory
         // Makes sure to pass it the parameters we need.
-        res.render('./displayAll.ejs', params);
+        res.render('/displayAll.ejs', params);
 }
