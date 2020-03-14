@@ -79,7 +79,7 @@ app.get('/displaySearch', function(req, res) {
 
         var jsonRetreats = JSON.stringify(result.rows);
         const params = {jsonRetreats: jsonRetreats};
-        displayRetreats(params, res);
+        displaySearch(params, res);
 
 
     }); 
@@ -100,5 +100,15 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 function displayRetreats(params, res) {
         // Render the response, using the EJS page "result.ejs" in the pages directory
         // Makes sure to pass it the parameters we need.
-        res.render('/displayAll.ejs', params);
+        res.render('displayAll', params);
+}
+
+
+/****************************************************************
+ * DISPLAY SEARCH RESULTS - callback function that displays retreats nicely
+ ****************************************************************/
+function displaySearch(params, res) {
+    // Render the response, using the EJS page "result.ejs" in the pages directory
+    // Makes sure to pass it the parameters we need.
+    res.render('displaySearch', params);
 }
