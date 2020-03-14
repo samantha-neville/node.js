@@ -12,11 +12,11 @@ module.exports = router;
 //make it so we can get the variables
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
-
-
-var sql = "SELECT * FROM person";
 //decide where static files come from
 app.use(express.static('public'))
+
+
+var sql = "SELECT * FROM users";
 //a simple get query from the database
 pool.query(sql, function(err, result) {
     // If an error occurred...
@@ -37,6 +37,15 @@ app.get('/home', function(req, res) {
     res.send("you are home");
 
 });
+app.get('/displayAll', function(req, res) {
+    res.send("display all yep");
+
+});
+app.get('/search', function(req, res) {
+    res.send("searchy searchy  loady");
+
+});
+
 
 //making an endpoint to get all of the people
 app.get('/getPerson', function(req, res, next) {
@@ -56,7 +65,7 @@ app.get('/getPerson', function(req, res, next) {
 		}
 
 		// Log this to the console for debugging purposes.
-		console.log("Found result: " + JSON.stringify(result.rows));
+		// console.log("Found result: " + JSON.stringify(result.rows));
 
 
 		// When someone else called this function, they supplied the function
