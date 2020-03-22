@@ -1,8 +1,8 @@
 node_modules/
-web/myapp
-web/landingPage
-web/aboutPage
-web/classActivities
-web/projects
-web/index.css
-web/index.php
+../myapp
+../landingPage
+../aboutPage
+../classActivities
+../projects
+../index.css
+../index.php
